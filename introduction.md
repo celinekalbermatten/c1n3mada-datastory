@@ -9,13 +9,5 @@ It’s time to take a break from whatever you’re doing and enjoy some movies. 
 You will be enjoying and learning at the same time. C1n3mada hopes that you are ready for this unique experience! 🍿
 
 
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
 
 
