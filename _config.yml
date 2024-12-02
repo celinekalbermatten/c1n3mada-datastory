@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
-title: 🎬 C1n3mada presents: Money, Money, Movies – The secrets of movies’ box office success 🎥
+title: C1n3mada datastory
 description: Title page of the datastory
 show_downloads: True
 navigation:
@@ -7,3 +7,4 @@ navigation:
     url: /
   - title: Example
     url: example
+  - 
