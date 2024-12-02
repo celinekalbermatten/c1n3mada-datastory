@@ -8,6 +8,7 @@ It’s time to take a break from whatever you’re doing and enjoy some movies. 
 
 You will be enjoying and learning at the same time. C1n3mada hopes that you are ready for this unique experience! 🍿
 
+![cinema](https://github.com/user-attachments/assets/76839324-5bb2-4866-b176-56e2992d15cd)
 
 
 
