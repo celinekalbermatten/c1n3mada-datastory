@@ -12,7 +12,8 @@ title: Money, Money, Movies
     text-align: center; 
     font-family: 'Garamond', serif; 
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8); 
-    color: white;">
+    color: white;
+    margin-bottom: 50px;">
     
 
 <div style="
@@ -44,8 +45,7 @@ title: Money, Money, Movies
 <div style="
         font-size: 1em; 
         color: #999; 
-        margin-top: 20px;
-        margin-bottom: 200px;">
+        margin-top: 20px;">
         🎥 A Production by <strong style="color: #E3D9B6;">C1n3mada Studios</strong>
 </div>
 </div>
