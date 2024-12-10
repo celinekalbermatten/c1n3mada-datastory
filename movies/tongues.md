@@ -2,6 +2,7 @@
 layout: default
 title: Tongues
 permalink: /movies/tongues
+hero_image: /assets/img/tongues-hero.jpg
 ---
 
 # Movie 2: Tongues

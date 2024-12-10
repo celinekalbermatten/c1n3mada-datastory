@@ -2,6 +2,7 @@
 layout: default
 title: Starlight
 permalink: /movies/starlight
+hero_image: /assets/img/starlight-hero.jpg
 ---
 
 # Movie 4: Starlight
