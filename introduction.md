@@ -13,11 +13,11 @@ You will be enjoying and learning at the same time. C1n3mada hopes that you are 
 
 <div class="movie-grid">
   <a href="/movies/echo">
-    <img src="/assets/img/echo.jpeg" alt="Echo">
+    <img src="/assets/img/echo.jpg" alt="Echo">
     <p>Echo</p>
   </a>
   <a href="/movies/tongues">
-    <img src="/assets/img/tongues.jpeg" alt="Tongues">
+    <img src="/assets/img/tongues.jpg" alt="Tongues">
     <p>Tongues</p>
   </a>
   <!-- Add the other movies -->
