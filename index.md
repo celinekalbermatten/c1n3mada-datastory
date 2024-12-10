@@ -2,7 +2,7 @@
 layout: default
 #title: Introduction
 title: Money, Money, Movies
-hero_image: /assets/img/title-hero.jpg
+#hero_image: /assets/img/title-hero.jpg
 ---
 
 <div style="
