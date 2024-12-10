@@ -45,7 +45,7 @@ title: Money, Money, Movies
         font-size: 1em; 
         color: #999; 
         margin-top: 20px;
-        margin-bottom: 40px;">
+        margin-bottom: 200px;">
         🎥 A Production by <strong style="color: #E3D9B6;">C1n3mada Studios</strong>
 </div>
 </div>
