@@ -2,6 +2,7 @@
 layout: default
 title: Waves
 permalink: /movies/waves
+hero_image: /assets/img/waves-hero.jpg
 ---
 
 # Movie 5: Waves

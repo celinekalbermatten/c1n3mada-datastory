@@ -2,6 +2,7 @@
 layout: default
 title: Echo
 permalink: /movies/echo
+#hero_image: /assets/img/echo-hero.jpg
 ---
 
 # Movie 1: Echo
