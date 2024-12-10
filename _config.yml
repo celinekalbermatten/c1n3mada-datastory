@@ -12,3 +12,10 @@ navigation:
     url: /movies/echo
   - title: Tongues
     url: /movies/tongues
+  - title: Shades
+    url: /movies/shades
+  - title: Starlight
+    url: /movies/starlight
+  - title: Waves
+    url: /movies/waves
+
