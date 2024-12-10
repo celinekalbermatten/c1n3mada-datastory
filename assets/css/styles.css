@@ -215,8 +215,9 @@ footer {
 }
 
 .movie-grid img {
-  width: 100%;
-  height: auto;
+  width: 200px; /* Set the same width for all images */
+  height: 150px; /* Set the same height for all images */
+  object-fit: cover; /* Ensures the image is cropped proportionally to fit the box */
   border-radius: 10px; /* Rounded corners for images */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   transition: transform 0.2s ease-in-out; /* Smooth zoom on hover */
