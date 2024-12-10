@@ -12,11 +12,11 @@ You will be enjoying and learning at the same time. C1n3mada hopes that you are 
 ![cinema](https://github.com/user-attachments/assets/76839324-5bb2-4866-b176-56e2992d15cd)
 
 <div class="movie-grid">
-  <a href="/movies/echo">
+  <a href="./movies/echo">
     <img src="/assets/img/echo.jpg" alt="Echo">
     <p>Echo</p>
   </a>
-  <a href="/movies/tongues">
+  <a href="./movies/tongues">
     <img src="/assets/img/tongues.jpg" alt="Tongues">
     <p>Tongues</p>
   </a>
