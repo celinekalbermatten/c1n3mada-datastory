@@ -181,6 +181,10 @@ section {
   margin-top: 150px; /* Add space equal to the height of the fixed hero section */
 }
 
+body.title-page section {
+  margin-top: 0; /* No margin for the title page */
+}
+
 small {
   font-size:11px;
 }
