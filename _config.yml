@@ -1,4 +1,5 @@
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
+theme: minimal-mistakes-jekyll
 title: C1n3mada datastory
 description: Website to present the datastory of a project
 show_downloads: True
