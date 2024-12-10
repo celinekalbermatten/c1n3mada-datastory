@@ -56,8 +56,10 @@ a:hover small {
 
 .wrapper {
   /* Adjust width for a larger layout */
-  width:1080px;
+  /* width:1080px; */
+  max-width: 1200px;
   margin:0 auto;
+  padding: 20px;
 }
 
 blockquote {
@@ -171,8 +173,10 @@ header ul a strong {
 }
 
 section {
-  width:750px;
-  float:right;
+  /*width:750px;*/
+  width: 100%; /* Make the section span the full width */
+  /*float:right;*/
+  float:none;
   padding-bottom:50px;
 }
 
