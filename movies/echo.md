@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Echo
+permalink: /movies/echo
 ---
 
 # Movie 1: Echo

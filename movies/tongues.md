@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Tongues
+permalink: /movies/tongues
 ---
 
 # Movie 2: Tongues
