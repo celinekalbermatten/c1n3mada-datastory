@@ -57,8 +57,8 @@ title: Money, Money, Movies
 You will be enjoying and learning at the same time. C1n3mada hopes that you are ready for this unique experience!  -->
 
 <div style="
-    font-family: 'Arial', sans-serif; 
-    font-size: 1rem; 
+    font-family: 'Times New Roman', sans-serif; 
+    font-size: 1.3rem; 
     line-height: 1.6; 
     color: #333; 
     margin-top: 20px; 

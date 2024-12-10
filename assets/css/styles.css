@@ -236,7 +236,8 @@ footer {
 .movie-grid p {
   text-align: center;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', serif;
   color: #444;
 }
 
