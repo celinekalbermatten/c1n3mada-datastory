@@ -21,15 +21,15 @@ You will be enjoying and learning at the same time. C1n3mada hopes that you are 
     <p>Tongues</p>
   </a>
   <a href="./movies/shades">
-    <img src="/assets/img/shades.jpg" alt="Shades">
+    <img src="./assets/img/shades.jpg" alt="Shades">
     <p>Shades</p>
   </a>
   <a href="./movies/starlight">
-    <img src="/assets/img/starlight.jpg" alt="Starlight">
+    <img src="./assets/img/starlight.jpg" alt="Starlight">
     <p>Starlight</p>
   </a>
   <a href="./movies/waves">
-    <img src="/assets/img/waves.jpg" alt="Waves">
+    <img src="./assets/img/waves.jpg" alt="Waves">
     <p>Waves</p>
   </a>
   <!-- Add the other movies -->
