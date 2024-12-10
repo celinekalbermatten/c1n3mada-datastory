@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Introduction
 ---
 
 # 🎬 C1n3mada presents: Money, Money, Movies – The secrets of movies’ box office success 🎥
@@ -9,6 +10,18 @@ It’s time to take a break from whatever you’re doing and enjoy some movies. 
 You will be enjoying and learning at the same time. C1n3mada hopes that you are ready for this unique experience! 🍿
 
 ![cinema](https://github.com/user-attachments/assets/76839324-5bb2-4866-b176-56e2992d15cd)
+
+<div class="movie-grid">
+  <a href="/movies/echo">
+    <img src="/assets/img/echo.jpeg" alt="Echo">
+    <p>Echo</p>
+  </a>
+  <a href="/movies/tongues">
+    <img src="/assets/img/tongues.jpeg" alt="Tongues">
+    <p>Tongues</p>
+  </a>
+  <!-- Add the other movies -->
+</div>
 
 
 

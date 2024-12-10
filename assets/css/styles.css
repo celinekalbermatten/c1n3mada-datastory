@@ -55,6 +55,7 @@ a:hover small {
 }
 
 .wrapper {
+  /* Adjust width for a larger layout */
   width:1080px;
   margin:0 auto;
 }
@@ -194,6 +195,40 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+
+/* Styles for the movie grid */
+.movie-grid {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 20px; /* Space between grid items */
+  margin-top: 20px;
+}
+
+.movie-grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth zoom on hover */
+}
+
+.movie-grid img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.movie-grid p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
@@ -266,5 +301,18 @@ footer {
     padding:0.4in;
     font-size:12pt;
     color:#444;
+  }
+}
+
+/* Responsive grid: 2 columns on tablets, 1 column on smaller screens */
+@media screen and (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: 1fr; /* 1 column */
   }
 }
