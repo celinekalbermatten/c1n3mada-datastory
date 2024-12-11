@@ -1,9 +1,12 @@
 body {
-  background-color: #fff;
+  padding: 0;
+  margin: 0;
   padding:50px;
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
   font-weight:400;
+  background: linear-gradient(135deg, rgba(172, 167, 167, 0.8), rgba(247, 234, 164, 0.8));
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -204,6 +207,17 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+/* Custom styles */
+
+/* Text styles */
+.text-custom{
+  font-family: 'Times New Roman', sans-serif; 
+  font-size: 1.3rem; 
+  line-height: 1.6; 
+  color: #333; 
+  margin-top: 20px; 
+  padding: 10px 20px;
+}
 
 /* Styles for the movie grid */
 .movie-grid {
@@ -283,6 +297,126 @@ footer {
   text-align: center;
 }
 
+/* Background glitter effect */
+#starshine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.shine {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url("../img/star.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  overflow: hidden;
+  z-index: -1;
+  color: tansparent;
+  -moz-opacity: 0;
+  opacity: 0;
+  animation: glitter 6s linear 0s infinite normal;
+  -webkit-animation: glitter 6s linear 0s infinite normal;
+  -moz-animation: glitter 8s linear 0s infinite normal;
+  -ms-animation: glitter 8s linear 0s infinite normal;
+  -o-animation: glitter 8s linear 0s infinite normal;
+}
+
+.shine.small {
+  width: 10px;
+  height: 10px;
+}
+
+.shine.medium {
+  width: 20px;
+  height: 20px;
+}
+
+.shine.large {
+  width: 30px;
+  height: 30px;
+}
+
+/*CSS3 keyframes for glittering effect*/
+@keyframes glitter {
+  0% {
+    -webkit-transform: scale(0.3) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.3) rotate(720deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.3) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+/* Credits */
+.credits-container {
+  position: fixed;
+  width: 60%;
+  height: 50%;
+  background-color: #000;
+  overflow: hidden;
+  border: 2px solid #fff;
+  font-family: 'Garamond', serif; 
+  /* Centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.credits {
+  position: absolute;
+  width: 100%;
+  animation: rollCredits 15s linear infinite;
+  text-align: center;
+}
+
+@keyframes rollCredits {
+  0% {
+      top: 100%;
+  }
+  100% {
+      top: -100%;
+  }
+}
+
+.credits-item {
+  margin: 60px 0;
+}
+
+.credits-item .name {
+  font-size: 2em;
+  color: #fff;
+}
+.credits-item .role {
+  font-size: 1.5em;
+  color: #ccc;
+}
+
+.credits-item .general {
+  font-size: 1.2em;
+  color: #999;
+}
+
+.credits-item .title {
+  font-size: 2.8em;
+  color: #fff;
+}
 
 @media print, screen and (max-width: 960px) {
 
