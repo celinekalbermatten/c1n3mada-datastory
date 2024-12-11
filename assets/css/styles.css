@@ -297,6 +297,60 @@ footer {
   text-align: center;
 }
 
+/* Sticky Banner Styles */
+.sticky-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 20px 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 1000;
+  font-family: 'Garamond', serif;
+}
+
+.sticky-banner .highlight {
+  font-size: 1.2em;
+  color: #BFA86A;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sticky-banner h1 {
+  font-size: 3.2em;
+  margin: 20px 0;
+  color: #E3D9B6;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sticky-banner h2 {
+  font-size: 2em;
+  margin: 10px 0;
+  font-style: italic;
+  color: #D4C593;
+  text-align: center;
+}
+
+.sticky-banner .small {
+  font-size: 1em;
+  color: #999;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sticky-banner .small strong {
+  color: #E3D9B6;
+}
+
+.content {
+  padding-top: 125px;
+}
+
 /* Background glitter effect */
 #starshine {
   position: absolute;
@@ -505,3 +559,4 @@ footer {
     grid-template-columns: 1fr; /* 1 column */
   }
 }
+
