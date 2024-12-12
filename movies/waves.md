@@ -77,9 +77,11 @@ p {
 <div class="sticky-banner">
   <div class="highlight">✦ WAVES ✦</div>
   <h2>How much is a movie’s box office revenue influenced by its release timing and duration?</h2>
+  <!-- 
   <div class="small">
       🎥 A Production by <strong>C1n3mada Studios</strong>
   </div>
+  -->
 </div>
 
 <div class="content">

@@ -304,7 +304,7 @@ footer {
   left: 0;
   width: 100%;
   background-color: #1a1a1a;
-  padding: 20px 40px;
+  padding: 10px 10px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
   color: white;
   z-index: 1000;
@@ -312,7 +312,7 @@ footer {
 }
 
 .sticky-banner .highlight {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #BFA86A;
   font-weight: bold;
   letter-spacing: 2px;
@@ -329,7 +329,7 @@ footer {
 }
 
 .sticky-banner h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 10px 0;
   font-style: italic;
   color: #D4C593;
@@ -420,17 +420,20 @@ footer {
 
 /* Credits */
 .credits-container {
-  position: fixed;
-  width: 60%;
-  height: 50%;
+  position: relative;
+  width: 80%;
+  margin: 100px auto; /* Center the container with space above and below */
+  /*height: 50%;*/
   background-color: #000;
   overflow: hidden;
   border: 2px solid #fff;
   font-family: 'Garamond', serif; 
   /* Centering */
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
+  padding: 20px 0; /* Padding for spacing inside the container */
+  height: 300px; /* Set a fixed height for the visible credits box */
 }
 
 .credits {

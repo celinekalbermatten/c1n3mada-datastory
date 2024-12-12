@@ -16,9 +16,11 @@ title: Money, Money, Movies
         ✦ STARLIGHT ✦
     </div>
     <h2>To what extent is a movie's box office revenue influenced by its director?</h2>
+    <!-- 
     <div class="small">
         🎥 A Production by <strong>C1n3mada Studios</strong>
     </div>
+    -->
 </div>
 
 <!-- Content -->

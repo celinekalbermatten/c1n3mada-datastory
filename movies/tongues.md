@@ -16,9 +16,11 @@ title: Money, Money, Movies
         ✦ TONGUES ✦
     </div>
     <h2>How do the language and country of a movie influence its box office revenue?</h2>
+    <!-- 
     <div class="small">
         🎥 A Production by <strong>C1n3mada Studios</strong>
     </div>
+    -->
 </div>
 
 <!-- Content -->

@@ -89,6 +89,41 @@ title: Money, Money, Movies
 </div>
 
 
+<!-- Roll credits -->
+<div class="credits-container">
+    <div class="credits">
+        <div class="credits-item">
+            <div class="title">✨ Thanks for watching! ✨</div>
+        </div>        
+        <div class="credits-item">
+            <div class="name">Céline Kalbermatten</div>
+            <div class="role">Director</div>
+        </div>
+        <div class="credits-item">
+            <div class="name">Nadezhda Ilieva</div>
+            <div class="role">Producer</div>
+        </div>
+        <div class="credits-item">
+            <div class="name">Said Gürbüz</div>
+            <div class="role">Writer</div>
+        </div>
+        <div class="credits-item">
+            <div class="name">Jennifer Shan</div>
+            <div class="role">Cinematographer</div>
+        </div>
+        <div class="credits-item">
+            <div class="name">Can Berk Alakir</div>
+            <div class="role">Editor</div>
+        </div>
+        <div class="credits-item">
+            <div class="general">🎥 C1n3mada Studios 🎥</div>
+            <div class="general">December 2024</div>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   $(function () {

@@ -16,9 +16,11 @@ title: Money, Money, Movies
         ✦ SHADES ✦
     </div>
     <h2>How does a movie's genre impact its box office revenue?</h2>
+    <!-- 
     <div class="small">
         🎥 A Production by <strong>C1n3mada Studios</strong>
     </div>
+    -->
 </div>
 
 <!-- Content -->
