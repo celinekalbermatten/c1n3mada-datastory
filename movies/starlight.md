@@ -12,15 +12,31 @@ title: Money, Money, Movies
 
 <!-- Title -->
 <div class="sticky-banner">
-    <div class="highlight">
-        ✦ STARLIGHT ✦
-    </div>
-    <h2>To what extent is a movie's box office revenue influenced by its director?</h2>
-    <!-- 
-    <div class="small">
-        🎥 A Production by <strong>C1n3mada Studios</strong>
-    </div>
-    -->
+  <!-- Back to Main Page Button -->
+  <a href="../index.html" class="btn-main-page">
+    🏠
+    Back to Main Page
+  </a>
+
+  <div class="highlight">
+    ✦ STARLIGHT ✦
+    <h2>
+      To what extent is a movie's box office revenue influenced by its director?
+    </h2>
+  </div>
+  
+
+  <!-- Previous and Next Movie Buttons -->
+  <div class="movie-nav-buttons">
+    <a href="shades.html" class="btn-movie-nav">
+      <span class="nav-arrow">←</span>
+      <span class="nav-text">Previous: Shades</span>
+    </a>
+    <a href="waves.html" class="btn-movie-nav">
+      <span class="nav-text">Next: Waves</span>
+      <span class="nav-arrow">→</span>
+    </a>
+  </div>
 </div>
 
 <!-- Content -->
@@ -64,5 +80,32 @@ title: Money, Money, Movies
 
       createStar();
     }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a"); // Select all links
+
+      links.forEach(link => {
+          link.addEventListener("click", function (e) {
+              const href = this.getAttribute("href");
+              if (href.startsWith("#") || href.includes("mailto:")) return;
+              
+              e.preventDefault(); // Prevent default navigation
+              
+              document.body.classList.add("fade-out");
+              setTimeout(() => {
+                  window.location.href = href; // Navigate after fade-out
+              }, 300); // Match CSS duration
+          });
+      });
+
+      // Fade-in effect when the page loads
+      window.addEventListener("pageshow", (event) => {
+          if (event.persisted) {
+              document.body.classList.remove("fade-out");
+          }
+      });
   });
 </script>

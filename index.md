@@ -159,5 +159,23 @@ title: Money, Money, Movies
     }
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".movie-grid a"); // Select all movie links
 
+      links.forEach(link => {
+          link.addEventListener("click", function (e) {
+              e.preventDefault(); // Prevent default navigation
+              const href = this.getAttribute("href"); // Get the URL to navigate to
 
+              // Add fade-out effect to the body
+              document.body.classList.add("fade-out");
+
+              // Wait for the animation to complete before navigating
+              setTimeout(() => {
+                  window.location.href = href;
+              }, 400); // Match the duration in CSS
+          });
+      });
+  });
+</script>
