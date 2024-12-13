@@ -81,9 +81,9 @@ title: Money, Money, Movies
     <img src="./assets/img/waves.png" alt="Waves">
     <p><b>Waves</b></p>
   </a>
-  <a href="./movies/credits">
-    <img src="./assets/img/credits.png" alt="Credits">
-    <p><b>Credits</b></p>
+  <a href="./movies/budget">
+    <img src="./assets/img/credits.png" alt="Budget">
+    <p><b>Budget</b></p>
   </a>
   <!-- Add the other movies -->
 </div>
@@ -93,7 +93,7 @@ title: Money, Money, Movies
 <div class="credits-container">
     <div class="credits">
         <div class="credits-item">
-            <div class="title">✨ Thanks for watching! ✨</div>
+            <div class="title">Thanks for watching!</div>
         </div>        
         <div class="credits-item">
             <div class="name">Céline Kalbermatten</div>
