@@ -39,63 +39,71 @@ title: Money, Money, Movies
 <div class="content" markdown="1">
   <div class="text-custom" markdown="1">
 
-**Ever wondered if a high IMDb rating truly translates into bigger box office bucks?** Ratings often guide our viewing choices. A well-rated film draws us in, while a poorly rated one might push us away. But do these stellar scores actually mean more money? In **Movie 1: Echo**, we look at the relationship between IMDb ratings and a film’s financial success—peeking behind the curtain to see if there's more at play than just the number after the decimal.
+Ever wondered if a high IMDb rating truly translates into bigger box office bucks? Ratings often guide our viewing choices. A well-rated film draws us in, while a poorly rated one might push us away. But do higher scores actually mean more money? In the movie Echo, you explore the connection between IMDb ratings and a movie’s financial success - digging into whether there’s more to it than just the number on the screen.
 
 ---
 
-### **Setting the Scene**
+### Setting the scene
 
-Before linking ratings to revenue, let's understand our dataset. It spans numerous films, each tagged with genres, IMDb ratings, and inflation-adjusted box office earnings. One of our first steps: checking out the genre landscape.
+Before linking ratings to revenue, it’s important to get a clear idea of the dataset. It covers a wide range of movies each categorized by genre, IMDb rating, and inflation-adjusted box office earnings. 
 
-**Which genres are most common?** Different genres attract different audiences, and this could influence how much ratings matter for revenue.
+Let’s first explore the genre landscape. What are the most common genres? Different genres attract different audiences, and this might play a role in how much ratings actually impact financial success.
 
 <iframe src="/assets/plots/echo/num_movies_per_genre.html" width="100%" height="600px"></iframe>
 
-Drama, action, comedy... Some genres dominate, potentially affecting the rating–revenue link.
+The bar chart illustrates the number of movies per genre in the dataset. Drama emerges clearly as the most common genre, with over 4’200 movies. The second most common genre is Comedy, which has nearly 3’000 movies. Thriller and Romance Film follow, with roughly 2’000 movies each. 
+
+Genres like Action, Crime Fiction and Adventure are moderately represented, while categories such as Romantic Comedy, Romantic Drama and Horror have smaller counts, each under 1’000 movies. The least represented genres, including Mystery, Fantasy and Science Fiction have fewer than 700 entries.
+
+This distribution highlights Drama's dominant presence, suggesting its broad appeal and versatility, whereas niche genres like World Cinema or Fantasy cater to more specific audiences. These disparities could influence how ratings impact financial success across genres.
 
 ---
 
-### Ratings & Revenues: Taking a Closer Look
+### Rating and revenues: taking a closer look
 
-**IMDb Ratings Distribution:** Are most films hovering around a 6 or 7, or is the field wide open?
+The distribution of IMDb ratings raises an interesting question. Are most films clustering around a 6 or 7, or is the field wide open?
 
 <iframe src="/assets/plots/echo/imdb_rating_distribution.html" width="100%" height="600px"></iframe>
 
-We find a cozy cluster in the mid-range, with fewer extremes.
+The distribution of IMDb ratings reveals a clear trend. Most movies have ratings concentrated between 6 and 7, forming a noticeable peak in this range. This suggests that the majority of films receive moderate ratings. Ratings below 5 and above 8 are much less common. This suggests that movies rarely perform extremely poorly or receive exceptionally high ratings or that in such cases fewer people are providing ratings.
 
-**Box Office Revenue Distribution:** Movie earnings are wildly uneven. Some flicks barely recoup costs, others skyrocket to astronomical figures.
+The distribution of box office revenues raises interest. Are movie earnings spread evenly across the spectrum or do a small number of blockbusters dominate the field?
 
 <iframe src="/assets/plots/echo/box_office_revenue_distribution.html" width="100%" height="600px"></iframe>
 
-Taking the log of revenue helps even out the scale, making patterns clearer.
+The distribution of box office revenues shows a clear skew. Most movies cluster in a specific range with log-transformed revenues peaking around 7. This corresponds to moderate box office success and suggests that the majority of movies earn a relatively stable amount, neither flopping completely nor breaking records.
+
+However, the long tail to the right indicates that a small number of movies achieve exceptionally high revenues and therefore skew the distribution. On the other hand, the left end of the curve shows a very small number of movies with extremely low earnings. This uneven spread highlights the disparity in box office success, where a few blockbusters dominate financially while most movies achieve more modest results.
 
 ---
 
-### Meeting in the Middle: Rating vs. Revenue
+### Ratings meet revenues: exploring the connection 
 
-Now, let’s put them together: IMDb rating on one axis, (log) revenue on the other, and see if there's a strong bond.
+Now it’s time to bring everything together. On one axis are the IMDb ratings and on the other one the box office revenue (log-transformed for clarity). Does a higher rating always translate to bigger earnings? Or is the relationship more complicated than it seems? Let’s explore.
 
 <iframe src="/assets/plots/echo/imdb_rating_vs_box_office_revenue.html" width="100%" height="600px"></iframe>
 
-It looks scattered—more like distant stars than a tight cluster. There's a slight upward tilt, but not a strong one. Higher ratings may help a bit, but they don’t guarantee a money shower.
+The plot is scattered and looks like distant stars rather than forming a tight cluster. While there is a slight upward trend, it’s not particularly strong. This suggests that higher IMDb ratings might provide some boost to box office revenue but they are not a guarantee for financial success. Even among movies with similar ratings, the revenues vary a lot. This highlights the complexity of factors that influence earnings beyond just audience or critic approval.
 
 ---
 
-### Measuring the Connection: Correlation
+### Measuring the connection: correlation analysis 
 
-Is this mild link real or just a coincidence? We check correlation, a number that tells us if two variables move together.
+Is this weak link real or could it just be a coincidence? Let’s check the correlation between the ratings, revenue and number of votes. Which of these factors are related and to what extent?
 
 <iframe src="/assets/plots/echo/correlation_matrix.html" width="100%" height="600px"></iframe>
 
-The correlation is modestly positive (around 0.19). So yes, rating and revenue have a friendly handshake, not a passionate embrace.
+The correlation matrix shows how ratings, revenue and votes are connected. The strongest relationship is between the number of votes and the box office revenue with a moderate positive correlation of 0.50. This means that movies earning more revenue tend to attract more audience votes. Ratings show weaker connections with a 0.36 correlation to votes and a very weak correlation of 0.19 to revenue. This indicates that higher ratings might slightly help increase the number of votes and the financial success but they are not major drivers. Overall, the matrix shows that while some relationships exist, other factors likely have a stronger influence on these outcomes.
 
 ---
 
-### Genre: Does It Make a Difference?
+### Genre: the impact on the rating-revenue connection
 
-Could certain genres care more about ratings when it comes to raking in revenue? We checked the correlation by genre:
+Do certain genres rely more on ratings to drive revenue? Let’s take a closer look at the correlation between ratings and revenue across different genres to find out.
 
 <iframe src="/assets/plots/echo/genre_correlation.html" width="100%" height="600px"></iframe>
+
+Céline to doooooooooooooooooooo 
 
 Some genres show a slightly stronger connection than others, but no genre changes the game entirely. The story remains: ratings help, but not dramatically.
 
