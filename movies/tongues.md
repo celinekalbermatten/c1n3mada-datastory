@@ -57,17 +57,24 @@ Let’s start by looking at the 10 most common countries out of the 105 total.
 
 The chart clearly shows that English-speaking countries dominate the list of top movie release countries. The United States of America leads with more than 7’500 released movies, which is almost seven times more than the second-highest release country, the United Kingdom. The remaining countries, such as France, Germany, and Canada show considerably lower numbers of movies. There is a strong presence of North America, Europe and parts of Asia, while South America and Africa are notably absent. 
 
-What about the movie languages? Do the results align with the release country analysis? Let’s look at the 10 most common primary movie languages out of the 158 total.
+What about the movie languages? Do the results align with the release country analysis? Let’s look at the 10 most common movie languages out of the 158 total.
 
 <iframe src="/assets/plots/tongues/top_10_movie_languages.html" width="100%" height="600px"></iframe>
 
-The chart shows that English strongly dominates as the primary language for movies, with more than 8’000 titles. It surpasses all other languages by far. French, Spanish, and German follow but with significantly fewer movies. The other languages, such as Italian, Korean, Japanese, Russian, Mandarin and Hindi show even smaller contributions to the total.
+The chart shows that English strongly dominates as the language for movies, with more than 8’000 titles. It surpasses all other languages by far. French, Spanish, and German follow but with significantly fewer movies. The other languages, such as Italian, Korean, Japanese, Russian, Mandarin and Hindi show even smaller contributions to the total.
 
 This pattern aligns with the earlier analysis of release countries, where English-speaking nations, particularly the United States, led the way. The dominance of English reflects its global reach and influence in the film industry. Other languages may have a more localised but still notable presence.
 
 ---
 
-### TO DOOOO CÉLINEEEEE
+### Language and revenue: uncovering the connection
+
+Does the primary language of a movie influence its box office success? Language can determine how far a film can travel and who it can reach. Let’s look at the top 10 primary languages with the highest mean box office revenues. Languages with fewer than 50 movies are excluded as their mean box office revenue may not be representative.
+
+<iframe src="/assets/plots/tongues/language_highest_mean_box_office.html" width="100%" height="600px"></iframe>
+
+
+
 
   </div>
 </div>
