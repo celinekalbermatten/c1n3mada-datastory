@@ -3,77 +3,6 @@ layout: default
 title: Money, Money, Movies
 ---
 
-<!-- Glitter background styling -->
-<style>
-#starshine {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.template.shine {
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow: 0 0 6px #fff, 0 0 10px #fff;
-  position: absolute;
-  opacity: 0.8;
-  animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-  0% { opacity: 0.8; }
-  50% { opacity: 0.3; }
-  100% { opacity: 0.8; }
-}
-
-.highlight {
-  font-size: 1.5em;
-  color: #fffa65;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-}
-
-.text-custom {
-  font-size: 1.1em;
-  line-height: 1.6em;
-  margin: 1em 0;
-  color: #222;
-  background-color: #f7f7f7;
-  padding: 1em;
-  border-radius: 5px;
-}
-
-.content {
-  margin: 2em auto;
-  max-width: 900px;
-  padding: 1em;
-}
-
-h3 {
-  margin-top: 2em;
-  color: #333;
-}
-
-p {
-  color: #444;
-}
-
-.small {
-  font-size: 0.9em;
-  color: #ccc;
-}
-</style>
-
-<div id="starshine">
-  <div class="template shine"></div>
-</div>
-
 <!-- Title -->
 <div class="sticky-banner">
   <!-- Back to Main Page Button -->
@@ -105,7 +34,7 @@ p {
 
 <div class="content">
   <div class="text-custom">
-    This film provides insights into the influence of a movie’s release season on its success, and it also examines 
+    This film provides insights into the influence of a movie’s release time and season on its success, and it also examines 
     how runtime and genre factor into the equation. Is that summer blockbuster formula actually backed by data? 
     And do longer films have a better shot at high revenue in certain seasons? Let’s find out.
   </div>
@@ -127,13 +56,19 @@ p {
     <iframe src="{{ site.baseurl }}/assets/plots/waves/season_revenue_bar.html" width="100%" height="500"></iframe> 
   </div>
 
-  <p>Here, we may observe that certain seasons stand out. Perhaps summer shows higher average revenues, or maybe another season surprises us. Let's also observe the movie revenue distribution by season:</p>
+  <p>Here, we observe that summer shows higher average revenues. Now let's see the genre popularity by season for the top 5 genres:</p>
+  
+  <div id="top-genres-by-movie-count-per-season">
+    <iframe src="{{ site.baseurl }}/assets/plots/waves/top_genres_by_movie_count_per_season.html" width="100%" height="500"></iframe> 
+  </div>
 
-  <div id="plot-season-revenue">
+  <p> It is seen that drama movies are the leader except for the summer reason where comedy takes the lead! Let's also observe the movie revenue distribution by season: </p>
+
+  <div id="boxplot_season">
     <iframe src="{{ site.baseurl }}/assets/plots/waves/boxplot_season.html" width="100%" height="500"></iframe> 
   </div>
 
-  <p>We observe that summer is the dominating season in revenue. However, although there are outliers in all of the seasons, winter does not seem like the best time to release a movie. But does runtime also play a part in these seasonal success stories?</p>
+  <p>Again, we observe that summer is the dominating season in revenue. However, although there are outliers in all of the seasons, winter does not seem like the best time to release a movie. But does runtime also play a part in these seasonal success stories?</p>
 
   <h3>Runtime vs. Revenue: A Seasonal Perspective</h3>
   <p>Let's explore the relationship between runtime and revenue across different seasons. 
