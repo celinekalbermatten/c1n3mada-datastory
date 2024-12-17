@@ -103,44 +103,40 @@ Do certain genres rely more on ratings to drive revenue? Let’s take a closer l
 
 <iframe src="/assets/plots/echo/genre_correlation.html" width="100%" height="600px"></iframe>
 
-Céline to doooooooooooooooooooo 
-
-Some genres show a slightly stronger connection than others, but no genre changes the game entirely. The story remains: ratings help, but not dramatically.
+The plot reveals that the relationship between IMDb ratings and box office revenue varies slightly across genres but no genre shows a really strong connection. While some genres, such as Period Piece and Film Adaptation, exhibit slightly higher correlations with values around 0.3 to 0.4, the values remain modest overall. This suggests that, regardless of genre, even if ratings play a role in revenue, they are not a decisive factor. The findings remain consistent: ratings can help but their impact is not dramatic and there are other factors influencing the drive box office success.
 
 ---
 
-### A New Character Enters: Popularity (Number of Votes)
+### A new character enters: the role of votes in the rating-revenue connection
 
-What if popularity (captured by the number of votes a film receives) matters more than the rating itself? After all, being widely talked about might drive more people to buy tickets.
-
-When we add the number of votes into our model, it turns out **popularity dwarfs rating as a revenue predictor**. In fact, once we factor in votes, rating’s influence shrinks dramatically.
-
-Check out a 3D view of ratings, votes, and revenue:
+What if the number of votes a movie receives actually matters more than the ratings themselves? Perhaps more popular movies reach a wider audience and therefore attract more people. Let’s analyse this in a 3D view that includes ratings, the number of votes and the box office revenue.
 
 <iframe src="/assets/plots/echo/3d_regression_plane.html" width="100%" height="600px"></iframe>
 
-Votes win the day. Popular films (many votes) bring in more revenue, regardless of their rating.
+The 3D visualization reinforces a clear pattern: votes win the day. Movies with a higher number of votes tend to get more revenue, regardless of their IMDb rating. The surface trend shows that revenue primarily increases with the number of votes. Ratings clearly contribute less to the relationship. This suggests that the number of votes has a stronger influence on box office success than the quality represented by the ratings. Widespread audience attention seems to be more important for the revenue than high ratings alone.
 
 ---
 
-### Clearing the View: Density Map
+### Clearing the view: density map for revealing patterns in the data
 
-With thousands of points, it’s easy to get lost in scatterplot noise. A density map groups data points into bins, making patterns clearer.
+With thousands of points, it’s easy to get lost in the scatterplot noise. Let’s visualize the data using a density map that groups the points into bins, making patterns clearer. 
 
 <iframe src="/assets/plots/echo/hexbin_regression_plane.html" width="100%" height="600px"></iframe>
 
-This confirms our findings: Most movies cluster around mid-level ratings and moderate revenues. The regression line is gentle, reinforcing that the rating–revenue relationship is weak.
+The density map confirms the earlier findings: most movies cluster around mid-level ratings and moderate box office revenues. The colour gradient shows a concentration of movies in this range. The gentle slope of the regression confirms that the relationship between ratings and revenue is weak. 
 
 ---
 
-### The Final Scene
+### The final scene: bringing it all together
 
-So, after all the plots, correlations, and regression lines, what are the key takeaways?
-- **Ratings & Revenue:** They are related, but only weakly. Having a great IMDb rating doesn’t guarantee a box office smash.
-- **Genre Matters a Bit:** Some genres show a slightly stronger rating–revenue link, but none truly break the mold.
-- **Popularity is King:** When we factor in how many votes a movie receives, we see that popularity plays a huge role in revenue. In fact, once popularity is considered, the rating itself becomes less important.
+So, after all the analysis, what can be concluded?
 
-In the grand production of movie success, IMDb ratings are just a supporting actor, while sheer popularity often takes the lead role. So next time you pick a movie based on its rating, remember: it might be popular appeal, not just that shiny number, bringing in the big bucks.
+After looking at all the plots, correlations, and regression lines, some takeaways can be drawn:
+- Ratings and revenue are only slightly connected. A high IMDb rating doesn’t mean a movie will be a box office hit. There is a link but it’s weak.
+- Genre also matters a little. For some genres, the connection between ratings and revenue is slightly stronger but overall, the genre doesn’t really change the story.
+- The real star is popularity. When considering the number of votes a movie gets, it becomes clear that popularity has a much bigger role in box office success. Ratings themselves start to matter less.
+
+In the end, IMDb rating is like a supporting actor. They play a role but they are not the main driver of success. Popularity, measured by the number of votes, often takes the centre stage. So, the next time you pick a movie because of its rating, remember: it’s probably the movie’s popularity, not just that number, that’s bringing in the big bucks.
 
   </div>
 
