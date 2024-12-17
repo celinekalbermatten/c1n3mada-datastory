@@ -69,11 +69,19 @@ This pattern aligns with the earlier analysis of release countries, where Englis
 
 ### Language and revenue: uncovering the connection
 
-Does the primary language of a movie influence its box office success? Language can determine how far a film can travel and who it can reach. Let’s look at the top 10 primary languages with the highest mean box office revenues. Languages with fewer than 50 movies are excluded as their mean box office revenue may not be representative.
+Does the languages of a movie influence its box office success? Language can determine how far a film can travel and who it can reach. Let’s look at the top 10 languages with the highest mean box office revenues. Languages with fewer than 50 movies are excluded as their mean box office revenue may not be representative.
 
 <iframe src="/assets/plots/tongues/language_highest_mean_box_office.html" width="100%" height="600px"></iframe>
 
+ANALYSIS TO DOOOOO
 
+---
+
+### SOME NICE TITLE TO DOOOO
+
+SOME NICE INTRO TO DO
+
+<iframe src="/assets/plots/tongues/country_highest_mean_box_office.html" width="100%" height="600px"></iframe>
 
 
   </div>
