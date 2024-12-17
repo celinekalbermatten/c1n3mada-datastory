@@ -61,6 +61,13 @@ What about the movie languages? Do the results align with the release country an
 
 <iframe src="/assets/plots/tongues/top_10_movie_languages.html" width="100%" height="600px"></iframe>
 
+The chart shows that English strongly dominates as the primary language for movies, with more than 8’000 titles. It surpasses all other languages by far. French, Spanish, and German follow but with significantly fewer movies. The other languages, such as Italian, Korean, Japanese, Russian, Mandarin and Hindi show even smaller contributions to the total.
+
+This pattern aligns with the earlier analysis of release countries, where English-speaking nations, particularly the United States, led the way. The dominance of English reflects its global reach and influence in the film industry. Other languages may have a more localised but still notable presence.
+
+---
+
+### TO DOOOO CÉLINEEEEE
 
   </div>
 </div>
