@@ -47,30 +47,30 @@ We often think of famous directors like **Steven Spielberg**, **Quentin Tarantin
 
 A director's role is to bring a script to life. They oversee the creative aspects of a film, including its visual style, tone, and the performances of the actors. A director is the key driving force in a movie's production, making crucial decisions that shape the final product. But who are the directors behind the highest-grossing movies?
 
-<iframe src="/assets/plots/starlight/log_max_box_office_revenue_over_time.html" width="100%" height="600px"></iframe>
+<iframe src="{{ site.baseurl }}/assets/plots/starlight/log_max_box_office_revenue_over_time.html" width="100%" height="600px"></iframe>
 
 Surprisingly, the leader here is **Victor Fleming** in 1939, who directed _Gone with the Wind_, one of the highest-grossing movies of all time. This may come as a surprise, as Fleming is less well-known than directors like **Steven Spielberg** or **James Cameron**. To explore further, let's examine some metrics that highlight a director's influence:
 
 - The total box office revenue of all movies directed by a director,
 - The number of movies directed.
 
-<iframe src="/assets/plots/starlight/top_15_directors_total_revenue.html" width="100%" height="600px"></iframe>
+<iframe src="{{ site.baseurl }}/assets/plots/starlight/top_15_directors_total_revenue.html" width="100%" height="600px"></iframe>
 
 As expected, **Steven Spielberg** tops the list of directors with the highest total box office revenue, followed by **James Cameron** and **Peter Jackson**. But does being a successful director also mean directing more movies? Let’s take a look at the number of movies directed by each filmmaker.
 
-<iframe src="/assets/plots/starlight/top_15_directors_movie_count.html" width="100%" height="600px"></iframe>
+<iframe src="{{ site.baseurl }}/assets/plots/starlight/top_15_directors_movie_count.html" width="100%" height="600px"></iframe>
 
 Here we again see many well-known directors, such as **Steven Spielberg**, **Woody Allen**, and **Clint Eastwood**, who have directed numerous films. However, these static views don't clearly show how consistent these directors are over time. To better visualize this, let’s let them race! Here is an animated race chart showing the top 15 directors by cumulative box office revenue over time.
 
-<iframe src="/assets/plots/starlight/cumulative_revenue_director_top15_raceplot.html" width="100%" height="600px"></iframe>
+<iframe src="{{ site.baseurl }}/assets/plots/starlight/cumulative_revenue_director_top15_raceplot.html" width="100%" height="600px"></iframe>
 
 This race reveals how some directors, such as **Spielberg**, take the lead later in time and dominate for long periods. However, in this race we are more looking at the success of the directors instead of movie success. To get another perspective, let’s look at the top 15 movies each year using a treemap.
 
-<iframe src="/assets/plots/starlight/slow_top_15_movie_revenue_by_director.html" width="100%" height="600px"></iframe>
+<iframe src="{{ site.baseurl }}/assets/plots/starlight/slow_top_15_movie_revenue_by_director.html" width="100%" height="600px"></iframe>
 
 This visualization shows that, in every years or mostly at least, a single movie dominates the box office revenue. Furthermore, some directors manage to place multiple movies in the top 15, further showcasing their consistent success. Now, let’s extend this concept and view the top 15 directors over time in a treemap format.
 
-<iframe src="/assets/plots/starlight/slow_top_15_movie_director_treemap_over.html" width="100%" height="600px"></iframe>
+<iframe src="{{ site.baseurl }}/assets/plots/starlight/top_15_movie_director_treemap_over_time.html" width="100%" height="600px"></iframe>
 
 This treemap reveals that once a director achieves significant success, they often remain at the top for long periods. While the leaders change over decades, successful directors maintain their influence for extended stretches of time.
 
