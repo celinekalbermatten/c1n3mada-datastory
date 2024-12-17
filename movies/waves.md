@@ -1,7 +1,14 @@
 ---
 layout: default
 title: Money, Money, Movies
+# permalink: /movies/echo
+# hero_image: /assets/img/echo-hero.jpg
 ---
+
+<!-- Glitter background -->
+<div id="starshine">
+    <div class="template shine"></div>
+</div>
 
 <!-- Title -->
 <div class="sticky-banner">
@@ -32,13 +39,14 @@ title: Money, Money, Movies
   </div>
 </div>
 
-<div class="content">
-  <div class="text-custom">
+<div class="text-custom">
+  <br><br><br>
+  <div>
     This film provides insights into the influence of a movie’s release time and season on its success, and it also examines 
     how runtime and genre factor into the equation. Is that summer blockbuster formula actually backed by data? 
     And do longer films have a better shot at high revenue in certain seasons? Let’s find out.
   </div>
-
+  <br>
   <h3>Are all seasons created equal?</h3>
   <p>We begin with a broad overview. The histogram below shows the distribution of movie revenues. 
   As you hover over each bar, you can see the count of movies and the corresponding revenue range.</p>
@@ -105,7 +113,6 @@ title: Money, Money, Movies
   </div>
 
   <p>Drama and Comedy appear as the most consistently popular genres, especially in recent decades. Genres like Action/Adventure and Romance Film gain prominence later, particularly in the latter half of the 20th century.</p>
-
 </div>
 
 <!-- jQuery for star animation (optional if you already included) -->
