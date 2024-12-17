@@ -40,11 +40,34 @@ title: Money, Money, Movies
 </div>
 
 <!-- Content -->
-<div class="content">
-  <div class="text-custom">
-      This film explores the importance of a movie's primary language and release country, as well as the correlation between these two aspects. Additionally, it shows whether movies with more than one original language achieve more success.
+<div class="content" markdown="1">
+  <div class="text-custom" markdown="1">
+
+Does a movie’s language or country of release impact its box office success? Is a film in multiple languages more likely to reach a wider audience and bring in bigger numbers? In the movie Tongues, you explore how primary language, release country and multilingual films connect to box office success.
+
+---
+
+### Setting the scene
+
+Before directly analysing the influence of the country and the language on the box office revenue, it is important to get an idea of the country and language distribution in the dataset. 
+
+Let’s start by looking at the 10 most common countries out of the 105 total.
+
+<iframe src="/assets/plots/tongues/top_10_movie_release_countries.html" width="100%" height="600px"></iframe>
+
+The chart clearly shows that English-speaking countries dominate the list of top movie release countries. The United States of America leads with more than 7’500 released movies, which is almost seven times more than the second-highest release country, the United Kingdom. The remaining countries, such as France, Germany, and Canada show considerably lower numbers of movies. There is a strong presence of North America, Europe and parts of Asia, while South America and Africa are notably absent. 
+
+What about the movie languages? Do the results align with the release country analysis? Let’s look at the 10 most common primary movie languages out of the 158 total.
+
+<iframe src="/assets/plots/tongues/top_10_movie_languages.html" width="100%" height="600px"></iframe>
+
+
   </div>
 </div>
+
+
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
