@@ -70,8 +70,10 @@ This race reveals how some directors, such as **Spielberg**, take the lead later
 
 This visualization shows that, in every years or mostly at least, a single movie dominates the box office revenue. Furthermore, some directors manage to place multiple movies in the top 15, further showcasing their consistent success. Now, let’s extend this concept and view the top 15 directors over time in a treemap format.
 
-<iframe src="{{ site.baseurl }}/assets/plots/starlight/top_15_movie_director_treemap_over_time.html" width="100%" height="600px"></iframe>
-
+  <div id="top_15_movie_director_treemap_over_time">
+    <iframe src="{{ site.baseurl }}/assets/plots/starlight/slow_top_15_movie_director_treemap_over_time.html" width="100%" height="500"></iframe> 
+  </div>
+  
 This treemap reveals that once a director achieves significant success, they often remain at the top for long periods. While the leaders change over decades, successful directors maintain their influence for extended stretches of time.
 
 ### Conclusion
