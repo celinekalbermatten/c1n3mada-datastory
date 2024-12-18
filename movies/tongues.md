@@ -83,6 +83,16 @@ SOME NICE INTRO TO DO
 
 <iframe src="/assets/plots/tongues/country_highest_mean_box_office.html" width="100%" height="600px"></iframe>
 
+ANALYSIS TO DOOOOO
+
+---
+
+### SOME NICE TITLE TO DOOOO
+
+SOME NICE INTRO TO DO
+
+<iframe src="/assets/plots/tongues/average_box_office_revenue_by_country.html" width="100%" height="600px"></iframe>
+
 
   </div>
 </div>
