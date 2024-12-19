@@ -43,7 +43,7 @@ title: Money, Money, Movies
   <div class="text-custom">
 
     <p>
-      Does a movie’s language or country of release impact its box office success? Is a movie in multiple languages more likely to reach a wider audience and bring in bigger numbers? In the movie Tongues, you explore how primary language, release country and multilingual movies connect to box office success. </p>
+      Does a movie’s language or country of release impact its box office success? Is a movie in multiple languages more likely to reach a wider audience and bring in bigger numbers? In the movie Tongues, you explore how language, release country and multilingual movies connect to box office success. </p>
 
     <hr>
 
@@ -69,10 +69,10 @@ title: Money, Money, Movies
       second-highest release country, the United Kingdom. The remaining
       countries,
       such as France, Germany, and Canada show considerably lower numbers of
-      movies. There is a strong presence of North America, Europe and parts of
-      Asia, while South America and Africa are notably absent.
+      movies. There is a strong presence of North America, Europe, parts of
+      Asia and Australia, while South America and Africa are notably absent. </p>
 
-      What about the movie languages? Do the results align with the release
+      <p> What about the movie languages? Do the results align with the release
       country analysis? Let’s look at the 10 most common movie languages out of
       the 158 total. </p>
 
@@ -93,7 +93,7 @@ title: Money, Money, Movies
 
       <p> This pattern aligns with the earlier analysis of release countries, where
       English-speaking nations, particularly the United States, led the way. The
-      dominance of English reflects its global reach and influence in the film
+      dominance of English reflects its global reach and influence in the movie
       industry. Other languages may have a more localised but still notable
       presence. </p>
 
@@ -127,7 +127,7 @@ title: Money, Money, Movies
 
     <h3> Language and Revenue: Trends Over Time </h3>
 
-    <p> Since average revenues might be influenced by specific events or particular movies, let’s take a closer look at how they change year by year for the most common languages. </p>
+    <p> Since average box office revenues might be influenced by specific events or particular movies, let’s take a closer look at how they change year by year for the most common languages. </p>
 
       <div class="plot-container">
         <iframe
@@ -138,11 +138,11 @@ title: Money, Money, Movies
     
     <p> The plot shows the average box office revenue per year for the 15 most common languages. It is immediately clear that English appears frequently, reflecting the large number of movies produced. However, its yearly average box office revenues are never particularly high. On the other hand, languages like Latin have a few years with very high average revenues, which significantly increase their overall average. This is because they have relatively few movies in total. </p>
 
-    <p> For instance, in 1965, 1967, and 1968, Russian has particularly high average revenues. This is due to the success of four major films: <i>War and Peace</i>, <i>Doctor Zhivago</i>, <i>2001: A Space Odyssey</i>, and <i>You Only Live Twice</i>. Latin reaches its peak in 1972 and 1973, together with Arabic, due to the two movies <i>The Exorcist</i> and <i>The Godfather</i>. In 2006, thanks to the success of <i>The Da Vinci Code</i>, Latin again shows a noticeably high average. It is important to note that some languages may benefit disproportionately from successful movies where they are featured alongside other languages. For example, <i>The Da Vinci Code</i> has English as its primary language but includes some Latin parts. Equal importance is given to both languages. Because Latin has very few movies overall, this single success significantly increases its average box office revenue. For English on the other hand, such success has a much smaller impact due to the large number of movies in the dataset. </p>
+    <p> For instance, in 1965, 1967, and 1968 Russian has particularly high average revenues. This is due to the success of four major movies: <i>War and Peace</i>, <i>Doctor Zhivago</i>, <i>2001: A Space Odyssey</i> and <i>You Only Live Twice</i>. Latin reaches its peak in 1972 and 1973, together with Arabic, due to the two movies <i>The Exorcist</i> and <i>The Godfather</i>. In 2006, thanks to the success of <i>The Da Vinci Code</i>, Latin again shows a noticeably high average. It is important to note that some languages may benefit disproportionately from successful movies where they are featured alongside other languages. For example, <i>The Da Vinci Code</i> has English as its primary language but includes some Latin parts. Equal importance is given to both languages. Because Latin has very few movies overall, this single success significantly increases its average box office revenue. For English on the other hand, such success has a much smaller impact due to the large number of movies in the dataset. </p>
 
     <p> The analysis highlights that languages with fewer movies are more sensitive to the influence of individual blockbuster hits, while languages with more movies tend to show more stable but less extreme averages. </p>
 
-    <p> A linear regression and ANOVA analysis exploring the general relationship between language and box office revenue have shown that, even though the model does not explain much of the variance due to its low R-squared value, the p-value for several languages is significant and the ANOVA p-value is very low as well. Therefore, it can be concluded that language plays a statistically significant role, even though it is not sufficient on its own as a factor. </p>
+    <p> A linear regression and ANOVA analysis exploring the general relationship between language and box office revenue have shown that, even though the model does not explain much of the variance due to its low R-squared value, the p-value for several languages is significantly low and the ANOVA p-value is very low as well. Therefore, it can be concluded that language plays a statistically significant role, even though it is not sufficient on its own as a factor. </p>
 
     <hr>
 
@@ -157,7 +157,7 @@ title: Money, Money, Movies
         </iframe>
       </div>
     
-    <p> The plot shows the distribution of box office revenue (in logarithmic scale) based on the number of languages present in the movies. The median revenue increases as the number of languages rises, particularly from 1 to 6 languages. Multilingual movies likely perform better financially because they can reach broader audiences. Even if a movie contains only a few words of a certain language, it can still have an impact on native speakers and make the movie more appealing to them. </p>
+    <p> The plot shows the distribution of box office revenue in logarithmic scale based on the number of languages present in the movies. The median revenue increases as the number of languages rises, particularly from 1 to 6 languages. Multilingual movies likely perform better financially because they can reach broader audiences. Even if a movie contains only a few words of a certain language, it can still have an impact on native speakers and make the movie more appealing to them. </p>
 
     <p> For movies with 7 or more languages, the observed trend becomes less consistent. There are very few movies in these categories, which may explain the lack of a clear pattern or further increases. No movies in the dataset feature exactly 10 languages, confirming the limited representation at higher numbers.  </p>
 
@@ -171,7 +171,7 @@ title: Money, Money, Movies
 
       <div class="plot-container">
         <iframe
-          src="{{ site.baseurl }}/assets/plots/tongues/average_box_office_revenue_by_country.html"
+          src="{{ site.baseurl }}/assets/plots/tongues/map_average_revenue_by_country.html"
           width="100%" height="100%" style="border: none;">
         </iframe>
       </div>
@@ -180,7 +180,7 @@ title: Money, Money, Movies
 
     <p> Some countries, like Kenya and Thailand, exhibit very high average box office revenues. However, this is likely due to the small number of movies produced in these regions, where a few successful movies significantly increase the average. Such results should be interpreted with caution, as they may not reflect a consistent trend but rather the impact of individual blockbusters. </p>
 
-    <p> In contrast, the United States of America has a high average box office revenue that is more reliable and representative. This is because the USA produces a large volume of movies and its average revenue is less influenced by outliers. The consistency of American box office success reflects its dominant role in the global film industry. </p>
+    <p> In contrast, the United States of America has a high average box office revenue that is more reliable and representative. This is because the USA produces a large volume of movies and its average revenue is less influenced by outliers. The consistency of American box office success reflects its dominant role in the global movie industry. </p>
 
     <h3> Release Country and Revenue: Revealing the Impact </h3>
 
@@ -195,11 +195,11 @@ title: Money, Money, Movies
 
     <p> The United States of America leads by far with an average box office revenue of $93M, based on a substantial volume of 7’226 movies. This makes the USA's average more reliable and reflective of consistent success and proves its dominance in global cinema. </p>
 
-    <p> The United Kingdom follows with an average of $62M, though with significantly fewer movies (236 titles). This suggests that while fewer movies are produced, many perform well. Spain, in third place, achieves an average box office revenue of $53M, but with even less movies. The high average is therefore probably due to some specifically successful movies. </p>
+    <p> The United Kingdom follows with an average of $62M, though with significantly fewer movies. This suggests that while fewer movies are produced, many perform well. Spain, in third place, achieves an average box office revenue of $53M, but with even less movies. The high average is therefore probably due to some specifically successful movies. </p>
 
-    <p> Countries like France and Japan maintain notable averages and their values are likely stabilised by a larger number of films. On the other hand, countries like Hong Kong and Australia show moderate averages but their smaller movie counts make them more sensitive to the influence of individual blockbusters. </p>
+    <p> Countries like France and Japan maintain notable averages and their values are likely stabilised by a larger number of movies. On the other hand, countries like Hong Kong and Australia show moderate averages but their smaller movie counts make them more sensitive to the influence of individual blockbusters. </p>
 
-    <p> In terms of continental presence, North America stands out with both the USA and Canada represented even though their average revenues differ significantly. Europe is well-represented with the United Kingdom, Spain and France among the top countries and Asia also has a notable presence with Japan, South Korea and Hong Kong. However, Africa and South America are absent, further highlighting the differences in representation across global markets. </p>
+    <p> In terms of continental presence, North America stands out with both the USA and Canada represented even though their average revenues differ significantly. Europe is well-represented with the United Kingdom, Spain and France among the top countries and Asia also has a notable presence with Japan, South Korea and Hong Kong. Australia is as well included among the top countries. However, Africa and South America are absent, further highlighting the differences in representation across global markets. </p>
 
     <p> A linear regression and ANOVA analysis exploring the general relationship between release country and box office revenue have shown results similar to those for the language relationship. The linear model does not explain much of the variability in the data, so the fit is not particularly strong. However, several countries show low p-values, indicating that their influence on box office revenue is statistically significant. </p>
 
@@ -220,10 +220,10 @@ title: Money, Money, Movies
       <li> The movie market is overwhelmingly dominated by the English language and, more specifically, the United States as the release country. </li>
       <li> Both language and release country have a statistically significant impact on a movie’s box office revenue. </li>
       <li> Averages for languages with fewer movies can be heavily influenced by a few highly successful movies and often benefit from being featured alongside more common languages. </li>
-      <li> North America, Europe, parts of Asia, and Australia are well represented as release countries in the movie market. However, South America and Africa are notably underrepresented in the dataset. </li>
+      <li> North America, Europe, parts of Asia and Australia are well represented as release countries in the movie market. However, South America and Africa are notably underrepresented in the dataset. </li>
     </ul>
 
-    <p> In conclusion, the language and release country of a movie do influence its box office revenue. However, the analysis also highlights that focusing only on these aspects provides only a limited understanding of the many complex factors driving box office success. </p>
+    <p> In conclusion, the language and release country of a movie do influence its box office revenue. However, the analysis also highlights that focusing exclusively on these aspects provides only a limited understanding of the many complex factors driving box office success. </p>
 
 
     </p>
