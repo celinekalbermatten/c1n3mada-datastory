@@ -122,72 +122,42 @@ title: Money, Money, Movies
 
     <h3> Revenue and Budget: The Ratio Story </h3>
 
-    <hr>
-
-    <h3> TO DOOOOOOOOOOOOOOOOOOOO </h3>
-
-    <p> TO DOOOOOOOOOOOOOOOOO Next, let's examine how the ratio of revenue to budget looks like. This will give another perspective on the relationship between investment and returns. </p>
+    <p> Next, let’s examine how the ratio of revenue to budget looks. How much revenue does a certain budget bring? </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/treasure/revenue_to_budget_ratio.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p> TO DOOOOOOOOOOOOOOOOOO The ratio of revenue to budget for most movies ranges between 0 and 10, which shows that a large portion of films earn less than 10 times their initial budget. The clustering around zero emphasizes that a large portion of movies has a moderate or low revenue compared to their budget. The amount of movies under the red line (1) shows that many movies fail to make back their initial budget.
-      The spikes that we see for higher values shows that a some movies have the ability to earn high revenues (more than 10 or even more than 100 times of their initial budget). This highlights the wide spectrum of financial outcomes in the movie industry and once again suggests that it is a risky business.
-    </p>
+    <p> The ratio of revenue to budget for most movies ranges between 0 and 10, which shows that a large portion of movies earn less than 10 times their initial budget. The clustering around zero emphasises that a large portion of movies has a moderate or low revenue compared to their budget. The amount of movies under the red line set at 1 shows that many movies fail to make back their initial budget. The spikes that can be seen for higher values show that some movies have the ability to earn revenues higher than 10 or even 100 times their initial budget. This highlights the wide spectrum of financial outcomes in the movie industry and once again suggests that it is a risky business. </p>
 
     <hr>
 
-    <h3> Budget vs Revenue: A Visual Examination</h3>
+    <h3> Budget and Revenue: Examining the Relation </h3>
 
-    <p>Let’s visualize the relationship between the log-transformed budget and revenue using a scatter plot. This helps to
-      see the relationship at a glance. Is there a clear pattern between budget and revenue?
-    </p>
+    <p> Is there a clear pattern between budget and revenue? Let’s explore their relationship to better understand how they interact. </p>
 
-    <div class="plot-container-large">
-      <iframe src="{{ site.baseurl }}/assets/plots/treasure/scatter_budget_vs_revenue.html" width="100%" height="100%" style="border: none;">
+    <div class="plot-container">
+      <iframe src="{{ site.baseurl }}/assets/plots/treasure/budget_vs_revenue_hexbin.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p> The scatter plot shows log-transformed budget against log-transformed revenue. There is an important positive upward
-      trend but it’s not a really strong or a definite relationship. The density of the points makes the relationship
-      difficult to see. This again suggests that budget alone cannot predict the financial outcome of a movie.
-    </p>
+    <p> There seems to be a positive correlation between the log-transformed budget and revenue and the slope of the line is very close to 1. Movies often cluster at the lower end of the revenue and budget spectrums, with very few movies fall into the higher budget-revenue categories. The low R-squared value emphasises that the positive relationship between budget and revenue is not very strong. There are other factors contributing to financial success in the movie industry. </p>
 
     <hr>
 
-    <h3> Visualizing Density: The Hexbin Plot</h3>
+    <h3> The Final Scene: Bringing it all Together </h3>
 
-    <p>To tackle the problem of density in the previous plot, let’s use a hexbin plot to visualize the relationship
-      between budget and revenue more clearly. By grouping the points in bins based on how many points they have, it
-      allows us to see patterns more easily. </p>
+    <p> After exploring all these different facets of the data, it is now time to collect the key findings about budget and box office success: </p>
 
-    <div class="plot-container-large">
-      <iframe src="{{ site.baseurl }}/assets/plots/treasure/budget_vs_revenue_hexbin.html" width="100%" height="100%" style="border: none;"></iframe>
-    </div>
-
-
-    <p>The hexbin plot highlights a somewhat positive correlation between the log-transformed budget and revenue with a visible upward trend and the slope of the line is very close to 1.
-      The density map shows that movies often cluster at the lower end of the revenue and budget spectrums, with very few movies in the higher budget-revenue categories.
-      R square value further confirms the finding that the positive relationship between budget and revenue is not very strong and there are other factors contributing to financial success in the film industry.
-    </p>
-
-    <hr>
-
-    <h3> The final scene: bringing it all together </h3>
-
-    <p> After exploring all these different facets of the data, we can now take the time to collect the key findings. </p>
-
-    <p> So, what have we learned about budget and box office success? </p>
     <ul>
-      <li>A bigger budget doesn’t guarantee bigger returns. The relationship between budget and revenue is moderate overall, and there are many movies with low returns despite their high budgets and vice versa.</li>
-      <li>ROI is a good metric to understand the big picture. There are huge amount of movies with a low or negative ROI and it is not easy to convert your budget into a successful movie.</li>
-      <li>Genre makes a difference. Some genres may have lower production costs and attract more audiences, resulting in higher ROI, whereas some genres require very high budgets, and it can be more difficult to achieve financial success.</li>
+      <li> A bigger budget doesn’t guarantee bigger returns. The relationship between budget and revenue is moderate overall, and there are many movies with low returns despite their high budgets and vice versa. </li>
+      <li> ROI is a good metric to understand the big picture. There is a huge number of movies with a low or negative ROI so it is not easy to convert your budget into a successful movie. </li>
+      <li> Genres make a difference. Some genres may have lower production costs and attract more audiences, resulting in higher ROI. On the other hand, there exist genres that require very high budgets and struggle to achieve financial success. </li>
     </ul>
 
     <p>
-      While budgets certainly play a role, they’re just one piece of a much larger puzzle. It’s clear that the film industry is a complicated ecosystem, and there is no guarantee that a high budget movie will be a blockbuster. Rather, the financial success depends on a good combination of different factors.
+      While budgets certainly play a role, they’re just one part of a much bigger picture. The movie industry is a complicated business and there is no guarantee that a high budget movie will be a blockbuster. Rather, the financial success depends on a good combination of different factors.
     </p>
   </div>
 </div>
