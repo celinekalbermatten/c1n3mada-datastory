@@ -38,121 +38,103 @@ title: Money, Money, Movies
 <div class="content">
   <div class="text-custom">
 
-    <p>In the movie world, a big budget often leads to high expectations. But does more money spent on production
-      actually guarantee more success at the box office? This is the question we will try to answer in our analysis of
-      the movie "Budget". Join us as we dive deep into how a movie's budget impacts its financial performance and
-      explore whether spending big truly leads to big wins. </p>
+    <p> In the movie world, a big budget often leads to high expectations. But does more money spent on production actually guarantee more success at the box office? In the movie Treasure, you will explore how a movie's budget impacts its financial performance and whether spending more actually leads to greater success. </p>
 
     <hr>
 
     <h3> Setting the scene </h3>
 
-    <p>Before we can dive into correlations, it's useful to see how our data is distributed. We'll explore the
-      distributions of movie budgets and revenues in log scale to understand the data landscape.
-    </p>
+    <p> Before diving into correlations, it’s important to get an idea of the data landscape. Let’s explore the distributions of movie budgets and box office revenues in logarithmic scale. </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/treasure/budget_and_revenue_distributions.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p>This plot shows the distributions of movie budgets and revenues. Both distributions are right-skewed with long
-      tails. Most movies cluster at the lower end of the budget scale, and most revenues are in a range that is relatively low compared to few outliers that make much more.
-      This indicates that there are few blockbusters and many other movies with much smaller revenues. Due to the
-      skewness of the distribution, it makes sense to explore the correlations using their log-transformed values. </p>
+    <p> Both budget and box office revenue distributions are right-skewed with long tails. Most movies cluster at the lower end of the budget scale and most revenues are in a range that is relatively low compared to few outliers that make much more. This indicates that there are a few blockbusters and many other movies with more modest revenues. Due to the skewness of the distribution, it makes sense to explore the correlations using their log-transformed values. </p>
 
     <hr>
 
-    <h3> Budget and revenue: a historical view </h3>
+    <h3> Budget and Revenue: A Historical View </h3>
 
-    <p>
-      Let’s take a look at how budgets and revenues have changed over time. Are they steadily increasing together, or does the
-      relationship between them change over the years?
-    </p>
+    <p> Let’s take a look at how budgets and box office revenues have changed over time. Are they always increasing together or does the relationship between them change over the years? </p>
 
     <div class="plot-container-large">
       <iframe src="{{ site.baseurl }}/assets/plots/treasure/budget_revenue_over_time.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
-
-    <p> The plot provides an interesting timeline, that shows how budgets and revenues have evolved from the 1950s to 2010s. In the early years up until the 70s, it seems that the budgets and revenues were highly fluctuating, while keeping a similar ratio in a general sense.
-      After the 70s however, it seems that while the budgets steadily increased, the revenues kept steady till 2010s. This indicates that budget increases are not always parallel to revenues, suggesting that a bigger budget doesn’t always mean a guaranteed bigger success.
-      After 2010s, both budgets and revenues rocketed up, showing that the movie industry has been growing rapidly in recent years and the effect of blockbuster movies on the industry.
-    </p>
+    <p> The plot shows how budgets and revenues have evolved from the 1950s to 2010s. In the early years up until the 70s, it seems that the budgets and revenues were highly fluctuating, while keeping a similar ratio in a general sense. After the 70s however, it seems that while the budgets steadily increased, the revenues kept stable till 2010s. This shows that a higher budget doesn’t always lead to higher revenue. A bigger budget doesn’t always mean a guaranteed bigger success. After 2010s, both budgets and revenues increased. The movie industry has been growing quickly in recent years and blockbuster movies have a noticeable impact. </p>
 
     <hr>
 
-    <h3> The magic metric: Return on Investment (ROI)</h3>
+    <h3> The Magic Metric: Return on Investment (ROI)</h3>
 
-    <p>Let’s look at Return on Investment (ROI). It's a simple yet powerful way of understanding profitability – a way to
-      see the amount earned for each dollar spent. If a movie does not at least make back the initial budget, it’s going to fail. Let’s see how the movie ROI distribution looks like. </p>
+    <p>Let’s look at the Return on Investment (ROI). It's a simple but powerful way to understand profitability, representing the amount earned for each dollar spent. If a movie does not at least make back the initial budget, it’s going to fail. Let’s see how the movie ROI distribution looks like. </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/treasure/roi_distribution.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p>The distribution of Return on Investment (ROI) presents a clear picture of movie profitability. The distribution shows that some movies show negative ROI (as can be seen from the range of the horizontal axis of the histogram) and some have really high values. Most movies are clustered around ROI values lower than 1 which means that most movies have a loss in the real world sense, after spending budget. However, there is a huge spike around 0 and some other movies show very high ROI (more than 4).
-      This means that there are few extreme blockbusters but there are many movies with low or negative ROI values. These findings reinforce the idea that making a financial success from movies is very difficult as many movies simply fail to reach a high profitability or can’t even make back the initial budget.
-    </p>
+    <p> The distribution shows that some movies show negative ROI, whereas some others have really high values. Most movies are clustered around ROI values lower than 1 which means that most movies have a loss in the real world sense, after spending budget. However, there is a huge spike around 0 and some other movies show very high ROI, even exceeding 4. This means that there are a few extreme blockbusters but many movies with low or negative ROI values. These findings support the idea that making a financial success from movies is very difficult as many movies simply fail to reach a high profitability or can’t even make back the initial budget. </p>
 
     <hr>
 
     <h3> Genre Matters: ROI by Genre </h3>
 
-    <p>Does every genre give the same chance of success? Or are some genres more profitable than others? Let's explore the ROI of different movie genres to get a better understanding.
-    </p>
+    <p> Does every genre have the same chance of success? Or are some genres more profitable than others? Let's explore the ROI of different movie genres to get a better understanding. </p>
+
     <div class="plot-container-large">
       <iframe src="{{ site.baseurl }}/assets/plots/treasure/roi_by_genre.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p>The plot highlights the differences in Return on Investment (ROI) across various movie genres. Some genres, such as Horror and Indie, often show higher ROI values than others. In contrast, genres such as Drama and Comedy have lower ROI on average. This suggests that certain genres have a better chance of making high financial returns from their budget. The differences can be due to various reasons including lower production costs or more audience interest in those genres.</p>
+    <p> The plot highlights the differences in ROI across various movie genres. Some genres, such as Horror and Indie, often show higher ROI values than others. However, their confidence intervals are very wide, indicating that the ROI for these genres is highly variable and can range significantly from one movie to another. This suggests that while some movies in these genres may achieve exceptional profitability, others may perform poorly and this results in inconsistent returns overall. On the other hand, genres with narrower confidence intervals, such as Drama or Comedy, tend to have more stable but potentially lower ROI values. Overall, the analysis suggests that certain genres have a better chance of making high financial returns from their budget. The differences can be due to various reasons including lower production costs or more audience interest in those genres. </p>
 
     <hr>
 
-    <h3>Budgeting by Genre: Do Genres Have Different Needs?</h3>
+    <h3> Budgeting by Genre: Understanding Different Needs </h3>
 
-    <p>Let’s see how budgets are allocated across different genres. Do certain genres require a significantly bigger financial commitment than others? </p>
+    <p> Let’s see how budgets are allocated across different genres. Do certain genres require a significantly bigger financial commitment than others? </p>
 
     <div class="plot-container-large">
       <iframe src="{{ site.baseurl }}/assets/plots/treasure/budget_per_genre.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p> The plot shows the median budgets of each genre. Genres such as Action and Fantasy often come with a higher price tag due to the special effects and high production costs they require. In contrast, genres like Horror and Indie have lower budgets indicating less financial needs for these genres. Other genres like drama and comedy have an average median budget.
-      This difference in budgets might play a role when trying to measure the correlation between budget and revenues of different genres, as some may have a greater potential for profitability due to lower production costs. </p>
+    <p> The plot shows the median budgets of each genre. Genres such as Action and Fantasy often need a higher budget due to the special effects and high production costs they require. In contrast, genres like Horror and Indie have lower budgets, indicating less financial needs for these genres. Other genres like drama and comedy have an average median budget. The difference in budgets might play a role when trying to measure the correlation between budget and revenues of different genres. Some of them may have a greater potential for profitability due to lower production costs. </p>
 
     <hr>
 
-    <h3>Revenue vs Budget: The Ratio Story</h3>
+    <h3> Genre and Budget: Measuring the Connection per Genre </h3>
 
-    <p> Next, let's examine how the ratio of revenue to budget looks like, offering another perspective on the relationship between investment and returns. </p>
-
-    <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/treasure/revenue_to_budget_ratio.html" width="100%" height="100%" style="border: none;">
-      </iframe>
-    </div>
-
-    <p> The ratio of revenue to budget for most movies ranges between 0 and 10, which shows that a large portion of films earn less than 10 times their initial budget. The clustering around zero emphasizes that a large portion of movies has a moderate or low revenue compared to their budget. The amount of movies under the red line (1) shows that many movies fail to make back their initial budget.
-      The spikes that we see for higher values shows that a some movies have the ability to earn high revenues (more than 10 or even more than 100 times of their initial budget). This highlights the wide spectrum of financial outcomes in the movie industry and once again suggests that it is a risky business.
-    </p>
-
-    <hr>
-
-    <h3> Genre and Budget: Measuring the Connection </h3>
-
-    <p>Does a higher budget always translate to higher revenue for all genres? We explored the correlation between budgets and revenues in different genres to see if some of them benefit more from having a bigger budget. </p>
+    <p> Does a higher budget always translate to higher revenue for all genres? Let’s explore the correlation between budgets and revenues in different genres to see if some of them benefit more from having a bigger budget. </p>
 
     <div class="plot-container-large">
       <iframe src="{{ site.baseurl }}/assets/plots/treasure/budget_correlation_per_genre.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
+    <p> The plot suggests that the correlation between budget and revenue is moderate across most genres. Action movies show a comparatively high positive correlation between budget and revenue while some genres like Horror and Indie have a more moderate correlation. This means that the budget allocation should take into account the genre of the movie as some genres might benefit less from higher budgets. </p>
 
-    <p>The correlation between budget and revenue is explored for each genre. The plot suggests that the correlation between budget and revenue is moderate across most genres. For instance, Action movies show a high positive correlation between budget and revenue while some genres like Horror and Indie have a moderate correlation.
-      This means that budget allocation should take into account the genre of the movie as some genres might not benefit from the higher budgets.
+    <hr>
+
+    <h3> Revenue and Budget: The Ratio Story </h3>
+
+    <hr>
+
+    <h3> TO DOOOOOOOOOOOOOOOOOOOO </h3>
+
+    <p> TO DOOOOOOOOOOOOOOOOO Next, let's examine how the ratio of revenue to budget looks like. This will give another perspective on the relationship between investment and returns. </p>
+
+    <div class="plot-container">
+      <iframe src="{{ site.baseurl }}/assets/plots/treasure/revenue_to_budget_ratio.html" width="100%" height="100%" style="border: none;">
+      </iframe>
+    </div>
+
+    <p> TO DOOOOOOOOOOOOOOOOOO The ratio of revenue to budget for most movies ranges between 0 and 10, which shows that a large portion of films earn less than 10 times their initial budget. The clustering around zero emphasizes that a large portion of movies has a moderate or low revenue compared to their budget. The amount of movies under the red line (1) shows that many movies fail to make back their initial budget.
+      The spikes that we see for higher values shows that a some movies have the ability to earn high revenues (more than 10 or even more than 100 times of their initial budget). This highlights the wide spectrum of financial outcomes in the movie industry and once again suggests that it is a risky business.
     </p>
 
     <hr>
