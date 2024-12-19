@@ -93,27 +93,27 @@ title: Money, Money, Movies
 <div class="credits-container">
     <div class="credits">
         <div class="credits-item">
-            <div class="title">Thanks for watching!</div>
+            <div class="title">✦ ⭐️ 🎥 ★ Thanks for watching! ★ 🎬 ⭐️ ✦</div>
         </div>        
         <div class="credits-item">
             <div class="name">Céline Kalbermatten</div>
-            <div class="role">Director</div>
+            <div class="role">Master Student in Data Science</div>
         </div>
         <div class="credits-item">
             <div class="name">Nadezhda Ilieva</div>
-            <div class="role">Producer</div>
+            <div class="role">Master Student in Computer Science</div>
         </div>
         <div class="credits-item">
             <div class="name">Said Gürbüz</div>
-            <div class="role">Writer</div>
+            <div class="role">Master Student in Computer Science</div>
         </div>
         <div class="credits-item">
             <div class="name">Jennifer Shan</div>
-            <div class="role">Cinematographer</div>
+            <div class="role">Master Student in Neuro-X</div>
         </div>
         <div class="credits-item">
             <div class="name">Can Berk Alakir</div>
-            <div class="role">Editor</div>
+            <div class="role">Master Student in Computer Science</div>
         </div>
         <div class="credits-item">
             <div class="general">🎥 C1n3mada Studios 🎥</div>
