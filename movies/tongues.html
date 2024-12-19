@@ -182,9 +182,9 @@ title: Money, Money, Movies
 
     <p> In contrast, the United States of America has a high average box office revenue that is more reliable and representative. This is because the USA produces a large volume of movies and its average revenue is less influenced by outliers. The consistency of American box office success reflects its dominant role in the global film industry. </p>
 
-    <h3> SOME NICE TITLE TO DOOOO </h3>
+    <h3> Release Country and Revenue: Revealing the Impact </h3>
 
-    <p> SOME NICE INTRO TO DO </p>
+    <p> How does the release country influence box office revenue? Are there specific countries that dominate the global movie market? Let’s explore which countries lead in driving box office success and determine if their impact is statistically significant. </p>
 
       <div class="plot-container">
         <iframe
@@ -201,9 +201,30 @@ title: Money, Money, Movies
 
     <p> In terms of continental presence, North America stands out with both the USA and Canada represented even though their average revenues differ significantly. Europe is well-represented with the United Kingdom, Spain and France among the top countries and Asia also has a notable presence with Japan, South Korea and Hong Kong. However, Africa and South America are absent, further highlighting the differences in representation across global markets. </p>
 
-    <p> STATISTICAL ANALYSIS TEXT MISSING </p>
+    <p> A linear regression and ANOVA analysis exploring the general relationship between release country and box office revenue have shown results similar to those for the language relationship. The linear model does not explain much of the variability in the data, so the fit is not particularly strong. However, several countries show low p-values, indicating that their influence on box office revenue is statistically significant. </p>
+
+    <p> The influence is positive for all countries except Canada, which has a negative coefficient of -0.4670. This means that having Canada as the release country might decrease the chances of achieving high box office revenues for a movie. The highest positive coefficient is for the USA, with a value of 0.7361, indicating that releasing a movie in the USA can have a significant positive impact on its box office revenue. </p>
+
+
+    <p> The p-value of the ANOVA analysis is very low, meaning the null hypothesis that box office revenue means are the same for all countries can be rejected. There is statistically significant evidence that the release country has an impact on box office revenue. </p>
 
     <hr>
+
+    
+    <h3> The Final Scene: Bringing it all Together </h3>
+
+    <p> So, after all the analysis, what can be concluded? </p>
+
+    <p> After looking at all the plots and considering the statistical analysis, some takeaways can be drawn: </p>
+    <ul>
+      <li> The movie market is overwhelmingly dominated by the English language and, more specifically, the United States as the release country. </li>
+      <li> Both language and release country have a statistically significant impact on a movie’s box office revenue. </li>
+      <li> Averages for languages with fewer movies can be heavily influenced by a few highly successful movies and often benefit from being featured alongside more common languages. </li>
+      <li> North America, Europe, parts of Asia, and Australia are well represented as release countries in the movie market. However, South America and Africa are notably underrepresented in the dataset. </li>
+    </ul>
+
+    <p> In conclusion, the language and release country of a movie do influence its box office revenue. However, the analysis also highlights that focusing only on these aspects provides only a limited understanding of the many complex factors driving box office success. </p>
+
 
     </p>
   </div>
