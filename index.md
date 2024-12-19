@@ -82,7 +82,7 @@ title: Money, Money, Movies
     <p><b>Waves</b></p>
   </a>
   <a href="./movies/treasure">
-    <img src="./assets/img/credits.png" alt="Treasure">
+    <img src="./assets/img/treasure.png" alt="Treasure">
     <p><b>Treasure</b></p>
   </a>
   <!-- Add the other movies -->
