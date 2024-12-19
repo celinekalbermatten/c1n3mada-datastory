@@ -173,7 +173,8 @@ title: Money, Money, Movies
       with higher revenue. On
       the other hand, genres with significant negative coefficients included <i>Indie</i>, <i>World Cinema</i>, and
       <i>Crime
-        Thriller</i>, showing weaker revenue associations.</p>
+        Thriller</i>, showing weaker revenue associations.
+    </p>
 
     <!-- <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/boxplots_num_genres.html" width="100%" height="100%"
@@ -200,14 +201,18 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p> The heatmap above shows the average box office revenue per genre over time, masking the years with no data. Clear trends are difficult to observe, due to the few visible outliers that skew the distribution. Let's explore this further.</p>
-
-    <p>As stated before, revenue spikes are visible for genres like <i>Family Film</i>, <i>Fantasy</i>, and <i>Period Piece</i> in specific years, likely due to outliers:</p>
-
+    <p>The heatmap above shows the average box office revenue per genre over time, masking the years with no data. Clear
+      trends are difficult to observe due to a few visible outliers that skew the distribution. Let’s explore this
+      further.</p>
+    <p>As stated before, revenue spikes are visible for genres like <i>Family Film</i>, <i>Fantasy</i>, and <i>Period
+        Piece</i> in specific years, likely due to outliers:</p>
     <ul>
-      <li>The revenue spikes in 1937 in <i>Family Film</i> and <i>Fantasy</i> are due to <b>Snow White and the Seven Dwarfs</b>.</li>
-      <li>The revenue spike in 1939 in <i>Period piece</i> is due to <b>Gone with the Wind</b>.</li>
+      <li>The revenue spikes in 1937 in <i>Family Film</i> and <i>Fantasy</i> are due to <b>Snow White and the Seven
+          Dwarfs</b>.</li>
+      <li>The revenue spike in 1939 in <i>Period Piece</i> is due to <b>Gone with the Wind</b>.</li>
     </ul>
+    <p>It’s difficult to determine the most profitable genres over the years based on the previous visualization. What
+      was the most profitable genre for each decade? Let’s find out.</p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/genre_ranking_over_time_racing_barplot.html" width="100%"
@@ -215,22 +220,55 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <div class="plot-container">
+    <p>This interactive chart visualizes the ranking of movie genres based on their average box office revenue per
+      decade. The horizontal bars represent the average revenue for each genre, with longer bars indicating higher
+      revenue. The timeline slider below allows you to explore changes in genre rankings over time. As you move the
+      slider across decades (from 1910 to 2010), the chart will update to show how the profitability of genres has
+      evolved.
+    </p>
+
+    <p>We can see that <i>Fantasy</i> and <i>Family Films</i> have consistently dominated since the 1930s, maintaining
+      top
+      rankings for multiple decades. <i>Science Fiction</i> gained significant relative success starting in the 1970s.
+      <i>Indie</i> and <i>World Cinema</i> genres consistently ranked at the bottom, showing lower average box office
+      revenue over
+      time.
+    </p>
+
+    <!-- <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/stacked_area_plot_genre_over_time.html" width="100%"
         height="100%" style="border: none;">
       </iframe>
-    </div>
+    </div> -->
 
-    <div class="plot-container">
+    <!-- <div class="plot-container-large">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/heatmap_genre_over_time.html" width="100%" height="100%"
         style="border: none;">
       </iframe>
-    </div>
+    </div> -->
+
+    <p>A logical follow-up question arises: What is the relationship between the number of movies produced over the
+      years and the average box office revenue
+      per genre? We want to explore whether periods with higher box office revenues for genres are associated with
+      increased production. Let’s find out.</p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/grid.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
+
+    <p>This interactive line chart visualizes the average box office revenue (in blue) and the number of movies produced
+      (in red) for a selected genre over time. The horizontal axis represents the years, while the two vertical axes
+      correspond to the respective metrics: average revenue (on the left, in dollars) and movie count (on the right).
+    </p>
+
+    <hr>
+    
+    <h3> The Final Scene: Bringing It All Together </h3>
+
+    <p> What did we discover from all this analysis? </p>
+    <p> After checking out the plots and digging into the stats, here are the main things we’ve learned: </p>
+
   </div>
 </div>
 
