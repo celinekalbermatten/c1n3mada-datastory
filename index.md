@@ -101,7 +101,7 @@ title: Money, Money, Movies
         </div>
         <div class="credits-item">
             <div class="name">Nadezhda Ilieva</div>
-            <div class="role">Master Student in Computer Science</div>
+            <div class="role">Master Student in Communication Systems</div>
         </div>
         <div class="credits-item">
             <div class="name">Said Gürbüz</div>
