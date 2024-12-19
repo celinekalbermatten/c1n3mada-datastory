@@ -45,11 +45,30 @@ title: Money, Money, Movies
       associated with higher revenues and if the relationship between genre and
       revenue changes over time. </p>
 
+    <hr>
+
+    <h3> Setting the scene </h3>
+
+    <p>
+      Let's explore the relevant aspects of our dataset. In this analysis, we will focus on attributes like the list of
+      genres and the release year of the movies. There are <b>316</b> unique genres in the dataset. The top 20 most
+      common
+      genres are shown in the plot below and include <i>Drama</i>, <i>Comedy</i>, <i>Adventure</i>, <i>Romance Film</i>,
+      <i>Action</i>, <i>Thriller</i>, and
+      others. Interestingly, <b>97.24%</b> of movies (<b>9243</b> out of <b>9505</b>) have at least one genre from the
+      top 20 most common
+      ones.
+    </p>
+
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/number_of_movies_per_genre.html" width="100%" height="100%"
         style="border: none;">
       </iframe>
     </div>
+
+    <p> As you might have already guessed, the movies in our dataset are often categorized under multiple genres.
+      However, what is the percentage of movies that have more than one genre? How does the distribution of the number
+      of genres per movie look like? Let's take a closer look.</p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/number_of_genres_per_movie.html" width="100%" height="100%"
@@ -57,11 +76,63 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
+    <p>
+      The chart above shows that multi-genre movies are very common in our dataset. In fact, <b>94.19%</b> of the movies
+      have
+      more than one genre. The majority of movies are assigned between 3 and 6 genres, with the highest counts observed
+      for movies with 4 and
+      5 genres. We notice a steady decrease in the number of movies with more than 6 genres, indicating that it is
+      uncommon for a movie to be categorized into a very high number of genres (e.g. 10 or more).
+    </p>
+
+    <hr>
+
+    <h3> Genre and Box Office Revenue: Exploring the connection</h3>
+
+    <p>How does the genre impact the box office success of a movie? Our goal is to uncover if certain themes are
+      linked with higher earnings. We will explore the top 20 genres with the highest average box office revenues.
+    </p>
+
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/interactive_top_20_genres_with_highest_revenue.html"
         width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
+
+    <p>
+      The chart above lists <i>Space Opera</i>, <i>Demonic Child</i>, and <i>Roadshow Theatrical Release</i> as the
+      highest-earning movie genres on average. This finding is unusual because none of the top 20 highest-earning genres
+      are among the top 20 most common genres in the dataset. By hovering over the bars in the interactive plot, you can
+      view the number of movies associated with each genre.
+      For instance, <i>Space Opera</i> and <i>Demonic Child</i> each have just 5 movies, while genres like
+      <i>Coming-of-Age Film</i> and <i>Archeology</i> have only 1. So, what’s going on here?
+    </p>
+    <p></p>
+    Many of these high-revenue genres, such as <i>Space Opera</i> and <i>Demonic Child</i>, have very few movies in the
+    dataset. Hence, their high average revenues are likely driven by outliers. For example,
+    </p>
+    <ul>
+      <li><i>Space Opera</i> includes <b>Star Wars</b>. (Yes, <b>Star Wars</b>, the saga that made
+        <i>“May the Force be with you”</i> a cultural phenomenon and turned galaxies far, far away into box office
+        gold.)
+      </li>
+      <li><i>Demonic Child</i> includes <b>The Exorcist</b>, the terrifying classic that still sends chills down spines.
+      </li>
+    </ul>
+    <p>
+      Given the multi-genre nature of our dataset, these movies are likely listed under other, more common genres whose
+      average revenues are lower. For instance,
+    </p>
+    <ul>
+      <li><b>Star Wars</b> is also classified under <i>Fantasy</i>, <i>Action</i>, <i>Science Fiction</i>, and
+        <i>Adventure</i>.
+      </li>
+      <li><b>The Exorcist</b> is also categorized under <i>Horror</i> and <i>Drama</i>.</li>
+    </ul>
+    <p>
+      To better understand revenue trends, the analysis will now focus on the top 20 most common genres, which, as noted
+      earlier, account for <b>97.24%</b> of the movies in the dataset. Let us take a look.
+    </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/interactive_top_20_genres_with_highest_revenue_2.html"
@@ -69,13 +140,42 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
+    <p> As explained before, we show the average box office revenue for the top 20 most common genres in our dataset. We
+      observe that <i>Fantasy</i> and <i>Family Film</i> genres have the highest average revenues, exceeding
+      <b>$175M</b>. <i>Science
+        Fiction</i>, <i>Adventure</i> and <i>Action</i> also show a strong average revenue, possibly due to their
+      popularity in
+      big-budget blockbusters. On the other hand, genres such as <i>World Cinema</i> and <i>Indie</i> have much lower
+      average
+      revenues, below <b>$25M</b>.
+    </p>
+
+    <p>While the average box office revenue provides an insight, it does not fully capture the distribution of revenues
+      across genres. The boxplots below will offer a more detailed view. </p>
+
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/boxplots_revenue_distribution_top_20.html" width="100%"
         height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <div class="plot-container">
+    <p>The boxplots show the distribution of the <b>log-transformed revenues</b>, which stabilizes the variance and
+      reduces
+      the skewness caused by extreme values in the revenue data. The plots reveal that many genres exhibit wide revenue
+      ranges with noticeable outliers, i.e., movies that earned significantly more or less than others in the same
+      genre. </p>
+
+    <p> To explain the influence of the top 20 genres on the box office revenue, we also built a linear regression
+      model. The model explains <b>19.7%</b> of the variance in box office revenue (R-squared), indicating that genres
+      alone are modest predictors of revenue. Genres with significant positive coefficients included <i>Fantasy</i>,
+      <i>Family
+        Film</i>, <i>Adventure</i>, <i>Musical</i>, <i>Action</i>, and <i>Thriller</i>, all showing strong associations
+      with higher revenue. On
+      the other hand, genres with significant negative coefficients included <i>Indie</i>, <i>World Cinema</i>, and
+      <i>Crime
+        Thriller</i>, showing weaker revenue associations.</p>
+
+    <!-- <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/boxplots_num_genres.html" width="100%" height="100%"
         style="border: none;">
       </iframe>
@@ -85,13 +185,29 @@ title: Money, Money, Movies
       <iframe src="{{ site.baseurl }}/assets/plots/shades/avg_revenue_per_num_genres.html" width="100%" height="100%"
         style="border: none;">
       </iframe>
-    </div>
+    </div> -->
 
-    <div class="plot-container">
+    <hr>
+
+    <h3> Genre and Box Office Revenue: Trends over Time </h3>
+
+    <p> We want to understand how the box office revenue trends for different genres evolved over time. Were there time
+      periods when some genres were more profitable than others? Let's take a closer look.</p>
+
+    <div class="plot-container-large">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/revenue_trends_over_time_heatmap.html" width="100%"
         height="100%" style="border: none;">
       </iframe>
     </div>
+
+    <p> The heatmap above shows the average box office revenue per genre over time, masking the years with no data. Clear trends are difficult to observe, due to the few visible outliers that skew the distribution. Let's explore this further.</p>
+
+    <p>As stated before, revenue spikes are visible for genres like <i>Family Film</i>, <i>Fantasy</i>, and <i>Period Piece</i> in specific years, likely due to outliers:</p>
+
+    <ul>
+      <li>The revenue spikes in 1937 in <i>Family Film</i> and <i>Fantasy</i> are due to <b>Snow White and the Seven Dwarfs</b>.</li>
+      <li>The revenue spike in 1939 in <i>Period piece</i> is due to <b>Gone with the Wind</b>.</li>
+    </ul>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/shades/genre_ranking_over_time_racing_barplot.html" width="100%"
@@ -112,8 +228,7 @@ title: Money, Money, Movies
     </div>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/grid.html" width="100%" height="100%"
-        style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/grid.html" width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
   </div>
