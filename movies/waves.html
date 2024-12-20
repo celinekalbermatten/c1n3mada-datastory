@@ -52,10 +52,14 @@ title: Money, Money, Movies
     
     <hr>
 
+    <h3>Setting the Scene</h3>
+    <p>Movies light up our screens, but their success often depends on 
+      factors beyond just content. Release timing and duration may be important 
+      variables. From broad patterns to possible insights, we embark on the 
+      exploration of seasonal trends, runtime effects, and the interplay of genres.</p>
+
     <h3>Are all seasons created equal?</h3>
-    <p>We begin with a broad overview. The histogram below shows the
-      distribution
-      of movie revenues.
+    <p>Our story begins with a sweeping overview: a histogram revealing the distribution of movie revenues.
       As you hover over each bar, you can see the count of movies and the
       corresponding revenue range.</p>
 
@@ -65,8 +69,8 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p>Most movies cluster in the lower-revenue range, yet a handful of outliers
-      achieve extraordinary earnings.
+    <p>Most movies cluster in the lower-revenue range, but a few 
+      exceptional blockbusters soar far above the rest.
       But how is this distribution influenced by the season of release?</p>
 
     <hr>
@@ -79,8 +83,11 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p>Here, we observe that summer shows higher average revenues. Now let's see
+    <p>Zooming in, we discover that summer emerges as the peak season, 
+      with the highest average revenues. Seasons don’t just shape 
+      the numbers, they shape audience preferences. Now let's see
       the genre popularity by season for the top 5 genres:</p>
+
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/waves/top_genres_by_movie_count_per_season.html" width="100%"
         height="100%" style="border: none;">
@@ -88,8 +95,12 @@ title: Money, Money, Movies
     </div>
 
 
-    <p> It is seen that drama movies are the leader except for the summer reason
-      where comedy takes the lead! Let's also observe the movie revenue
+    <p> It is seen that drama, typically the most popular genre, 
+      cedes its crown to comedy during this sunny stretch! Our exploration of 
+      the top 5 genres by movie count shows that drama leads consistently 
+      across most seasons. However, summer is the time for comedy to shine, 
+      overtaking drama in popularity. Winter and fall, meanwhile, continue 
+      to favor drama’s deeper narratives. Let's also observe the movie revenue
       distribution by season: </p>
 
     <div class="plot-container">
@@ -110,7 +121,8 @@ title: Money, Money, Movies
     <hr>
 
     <h3>Runtime vs. Revenue: A Seasonal Perspective</h3>
-    <p>Let's explore the relationship between runtime and revenue across
+    <p>Does runtime play a supporting role in the seasonal blockbuster phenomenon?
+      Let's explore the relationship between runtime and revenue across
       different
       seasons.
       Use the legend on the side to select a season and observe how the
@@ -159,8 +171,9 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p>Notice any patterns? Best revenues were observed in movies released on
-      Mondays and Wednesdays! But how about the release year?</p>
+    <p>Notice any patterns? Movies released on Wednesdays and Mondays defy expectations, 
+      generating the best average revenues. Friday and Saturday releases, though convenient, 
+      show slightly lower averages. But how about the release year?</p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/waves/genre_popularity_over_time.html" width="100%" height="100%"
@@ -168,10 +181,23 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p>Drama and Comedy appear as the most consistently popular genres,
-      especially
-      in recent decades. Genres like Action/Adventure and Romance Film gain
+    <p>A heatmap of genre popularity over time reveals fascinating trends:
+      Drama and comedy maintain their dominance over decades. Genres like Thriller and Romance Film gain
       prominence later, particularly in the latter half of the 20th century.</p>
+
+    <h3>Final Scene</h3>
+    <p> As the story unfolds, the interplay of season, genre, runtime, 
+      and even day-of-week emerges as a key factor woven with data and patterns.
+      Summer may reign as the box office king, but it’s not the only contender. 
+      Genres like drama dominate in quieter seasons, while comedy brings 
+      the heat during summer's peak. And although longer runtimes often 
+      contribute to success, their influence depends on the timing and genre.
+
+      Monday and Wednesday break expectations with higher revenues, proving 
+      that timing matters down to the day. The historical heatmap reminds us that 
+      cinema is constantly evolving. Drama and comedy have stood the test of time, 
+      but action and romance are symbols of how cultural shifts influence what 
+      captivates audiences.</p>
   </div>
 </div>
 
