@@ -55,16 +55,11 @@ title: Money, Money, Movies
 </div>
 
 <div class="text-custom">
-  <!-- <p>
+  <p>
     It’s time to take a break from whatever you’re doing and enjoy some movies. The lineup includes 6 movies, each telling its own story. Together, they provide insights into what influences a movie's box office revenue. How do factors like rating, language, country, genre, director or even the release season affect a movie’s financial success? Through the selected films you will get detailed insights in a fun and engaging way. Each factor is analysed individually, with overlapping analyses across several factors, all together providing a comprehensive understanding by the end. In addition to learning about the influencing factors you will also discover possible reasons, as the movies also include explanatory elements.
-    </p> -->
-  <p> Lights, camera, action! Get ready to dive into six handpicked movies that don’t just entertain—they reveal the
-    secrets behind box office hits. What drives a film’s financial success? Is it the language, the genre, the director, or
-    even the season it’s released? Each movie in this lineup holds a piece of the puzzle. As you watch, you’ll explore how factors like ratings,
-    budget, country of origin, and more come together to shape success. These films don’t just show you the data—they
-    bring it to life with engaging stories and fascinating connections. </p>
-  <p> Sit back, hit play, and let the stars of cinema guide you through this fascinating journey. C1n3mada hopes that
-    you are ready for this unique experience! 🎬 </p>
+    </p>
+  
+  <p> Sit back, hit play and let the stars of cinema guide you through this fascinating journey. C1n3mada hopes that you are ready for this unique experience! </p>
 
 </div>
 
