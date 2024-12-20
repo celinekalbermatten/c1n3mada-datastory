@@ -13,7 +13,7 @@ title: Money, Money, Movies
 <!-- Title -->
 <div style="
    background-color: #1a1a1a; 
-   padding: 100px; 
+   padding: 50px; 
    text-align: center; 
    font-family: 'Garamond', serif; 
    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8); 
