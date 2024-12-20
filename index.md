@@ -14,12 +14,15 @@ title: Money, Money, Movies
 <div style="
    background-color: #1a1a1a; 
    padding: 40px; 
-   border-radius: 20px; 
    text-align: center; 
    font-family: 'Garamond', serif; 
    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8); 
    color: white;
-   margin-bottom: 40px;">
+   margin: -20px -20px 40px -20px;
+   width: 100vw;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);">
    <!-- add the margin that should come after the box here -->
    <div style="
       font-size: 1.2em; 
