@@ -41,41 +41,13 @@ title: Money, Money, Movies
 <div class="content">
   <div class="text-custom">
     <p>
-      This film provides insights into the influence of a movie’s release time
-      and
-      season on its success, and it also examines
-      how runtime and genre factor into the equation. Is that summer blockbuster
-      formula actually backed by data?
-      And do longer films have a better shot at high revenue in certain seasons?
-      Let’s find out.
+      Movies light up our screens, but their success often depends on more than just the story. Is the idea of a summer blockbuster really supported by the data? And do longer movies tend to make more money during certain seasons? In the movie Waves you will get insights into the influence of a movie’s release time and season on its success and how runtime and genre contribute to it. 
     </p>
     
     <hr>
 
     <h3>Setting the Scene</h3>
-    <p>Movies light up our screens, but their success often depends on 
-      factors beyond just content. Release timing and duration may be important 
-      variables. From broad patterns to possible insights, we embark on the 
-      exploration of seasonal trends, runtime effects, and the interplay of genres.</p>
-
-    <h3>Are all seasons created equal?</h3>
-    <p>Our story begins with a sweeping overview: a histogram revealing the distribution of movie revenues.
-      As you hover over each bar, you can see the count of movies and the
-      corresponding revenue range.</p>
-
-    <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/waves/revenue_distribution.html" width="100%" height="100%"
-        style="border: none;">
-      </iframe>
-    </div>
-
-    <p>Most movies cluster in the lower-revenue range, but a few 
-      exceptional blockbusters soar far above the rest.
-      But how is this distribution influenced by the season of release?</p>
-
-    <hr>
-
-    <h3>Seasonal Patterns</h3>
+    <p> Let’s first take a look at how a movie’s average box office revenue changes depending on the season.</p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/waves/season_revenue_bar.html" width="100%" height="100%"
@@ -83,10 +55,37 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p>Zooming in, we discover that summer emerges as the peak season, 
-      with the highest average revenues. Seasons don’t just shape 
-      the numbers, they shape audience preferences. Now let's see
-      the genre popularity by season for the top 5 genres:</p>
+    <p>Summer emerges as the peak season. With an average box office revenue of over $115M it has the highest revenue among all seasons. Spring follows with slightly more than $80M, while Fall has almost $70M. Winter, with around $60M, is the least favourable season for box office success.</p>
+
+    <hr>
+
+    <h3>Season and Revenue: Exploring the Connections</h3>
+
+    <p> How do box office revenues vary across the seasons? Let’s look at their distributions and identify the trends. </p>
+
+    <div class="plot-container">
+      <iframe src="{{ site.baseurl }}/assets/plots/waves/boxplot_season.html" width="100%"
+        height="100%" style="border: none;">
+      </iframe>
+    </div>
+
+    <p> Summer is the dominating season, followed by spring and fall. Winter appears to be the least favourable time to release a movie. </p>
+
+    <hr>
+
+    <h3>Genre Matters: Exploring the Season-Genre Connection</h3>
+
+    <p> Which genres were the most popular in different years? How has this popularity changed over time? To start the analysis of genre influence, let’s explore their trends in popularity over the years. </p>
+
+    <div class="plot-container">
+      <iframe src="{{ site.baseurl }}/assets/plots/waves/genre_popularity_over_time.html" width="100%"
+        height="100%" style="border: none;">
+      </iframe>
+    </div>
+
+    <p> Drama and comedy maintain their dominance over decades. Genres like Thriller and Romance Film gain prominence later, particularly in the latter half of the 20th century. Over time, the overall number of movies produced has increased. Interestingly, there is a noticeable spike in the number of movies produced around 1950 compared to the other years during that era. </p>
+
+    <p> What are the most common genres during each season of the year? Let’s explore the top genres for each season so those with the highest number of movie releases during a particular time of year. </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/waves/top_genres_by_movie_count_per_season.html" width="100%"
@@ -94,110 +93,54 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
+    <p> Looking at the top 5 genres by movie count, drama leads in all seasons. However, during summer, it’s time to shine for comedy, which is almost overtaking drama in popularity. The Action genre also has comparatively high popularity in summer. Romance takes a spot on the podium during winter, a time when people enjoy the coziness of staying indoors. Thrillers tend to be more popular during summer and fall compared to other seasons. </p>
 
-    <p> It is seen that drama, typically the most popular genre, 
-      cedes its crown to comedy during this sunny stretch! Our exploration of 
-      the top 5 genres by movie count shows that drama leads consistently 
-      across most seasons. However, summer is the time for comedy to shine, 
-      overtaking drama in popularity. Winter and fall, meanwhile, continue 
-      to favor drama’s deeper narratives. Let's also observe the movie revenue
-      distribution by season: </p>
+    <p> After looking at the seasonal leaderboards based on the number of movie releases, let’s now explore the relation between seasons and box office revenue across different genres. </p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/waves/boxplot_season.html" width="100%" height="100%"
-        style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/waves/genre_season_heatmap.html" width="100%"
+        height="100%" style="border: none;">
       </iframe>
     </div>
 
-
-    <p>Again, we observe that summer is the dominating season in revenue.
-      However,
-      although there are outliers in all of the seasons, winter does not seem
-      like
-      the best time to release a movie. But does runtime also play a part in
-      these
-      seasonal success stories?</p>
+    <p> Summer shows consistently high revenues across most genres. However, the highest averages are seen during spring, with Fantasy, Adventure and Family Film with values around $200M, $190M and $170M, respectively. These three genres perform well across all seasons but achieve their best results in spring and summer. Thriller, on the other hand, shows noticeable differences depending on the season, with its peak in summer and a drop of around $60M in fall. A similar trend is seen with Crime Fiction, which has its peaks in summer and its lowest phase in winter. This analysis highlights interesting differences in box office revenues when looking at how genre and season interact. </p>
 
     <hr>
 
-    <h3>Runtime vs. Revenue: A Seasonal Perspective</h3>
-    <p>Does runtime play a supporting role in the seasonal blockbuster phenomenon?
-      Let's explore the relationship between runtime and revenue across
-      different
-      seasons.
-      Use the legend on the side to select a season and observe how the
-      correlation is:</p>
+    <h3>Runtime and Revenue: A Seasonal Perspective</h3>
+
+    <p> Does runtime play a supporting role in the seasonal blockbuster phenomenon? Let's explore the relationship between runtime and revenue across different seasons. </p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/waves/runtime_revenue_scatter.html" width="100%" height="100%"
-        style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/waves/runtime_revenue_scatter.html" width="100%"
+        height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p>In some seasons, longer films might earn more, while in others, runtime
-      seems less important. For this plot, the general observation is the
-      revenue
-      increases with longer runtime, however it is not a strong relation.</p>
+    <p> TO DOOOOOOOOO </p>
 
-    <hr> 
-    <h3>Genre Effects</h3>
-    <p>Different genres may have seasonal sweet spots. Select a genre to observe
-      how its average revenue shifts by season:</p>
+    <hr>
+
+    <h3>Release Day: Exploring the Impact of Weekly Timing</h3>
+
+    <p> Season isn’t the only timing factor. The release day of the week can influence the box office revenue too. Do movies released on Fridays or weekends tend to make more money on average? Let’s have a closer look at the daily box office averages. </p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/waves/genre_season_heatmap.html" width="100%" height="100%"
-        style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/waves/dayofweek_revenue.html" width="100%"
+        height="100%" style="border: none;">
       </iframe>
     </div>
 
-    <p>As you hover over the cells/bars, you may discover that certain genres
-      thrive in spring times,
-      while others peak in fall or winter. The interplay of genre, season, and
-      runtime shapes box office performance.</p>
+    <p> Movies released on Wednesdays surprisingly generate the highest average revenues. Monday, Thursday and Tuesday follow. The weekend days, including Friday, show noticeably lower average box office revenues. </p>
 
+    <hr>
+
+    <h3>The Final Scene: Bringing It All Together</h3>
     
-    <hr>  
-    <h3>Day-of-Week and Year Patterns</h3>
-    <p>Season isn’t the only timing factor. Release day of the week can
-      influence
-      revenue too. Check out the chart below
-      to see if movies released on Fridays or weekends tend to make more money
-      on
-      average:</p>
+    <p> So, after all the analysis, what can be concluded? </p>
 
-    <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/waves/dayofweek_revenue.html" width="100%" height="100%"
-        style="border: none;">
-      </iframe>
-    </div>
+    <p> After looking at all the plots and considering the statistical analysis, some takeaways can be drawn: TO DOOOOOOOOO </p>
 
-    <p>Notice any patterns? Movies released on Wednesdays and Mondays defy expectations, 
-      generating the best average revenues. Friday and Saturday releases, though convenient, 
-      show slightly lower averages. But how about the release year?</p>
-
-    <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/waves/genre_popularity_over_time.html" width="100%" height="100%"
-        style="border: none;">
-      </iframe>
-    </div>
-
-    <p>A heatmap of genre popularity over time reveals fascinating trends:
-      Drama and comedy maintain their dominance over decades. Genres like Thriller and Romance Film gain
-      prominence later, particularly in the latter half of the 20th century.</p>
-
-    <h3>Final Scene</h3>
-    <p> As the story unfolds, the interplay of season, genre, runtime, 
-      and even day-of-week emerges as a key factor woven with data and patterns.
-      Summer may reign as the box office king, but it’s not the only contender. 
-      Genres like drama dominate in quieter seasons, while comedy brings 
-      the heat during summer's peak. And although longer runtimes often 
-      contribute to success, their influence depends on the timing and genre.
-
-      Monday and Wednesday break expectations with higher revenues, proving 
-      that timing matters down to the day. The historical heatmap reminds us that 
-      cinema is constantly evolving. Drama and comedy have stood the test of time, 
-      but action and romance are symbols of how cultural shifts influence what 
-      captivates audiences.</p>
   </div>
 </div>
 
