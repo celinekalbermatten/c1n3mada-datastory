@@ -61,7 +61,8 @@ title: Money, Money, Movies
     </p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/number_of_movies_per_genre.html" width="100%" height="100%" style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/number_of_movies_per_genre.html" width="100%" height="100%"
+        style="border: none;">
       </iframe>
     </div>
 
@@ -70,7 +71,8 @@ title: Money, Money, Movies
       of genres per movie look like? Let's take a closer look.</p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/number_of_genres_per_movie.html" width="100%" height="100%" style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/number_of_genres_per_movie.html" width="100%" height="100%"
+        style="border: none;">
       </iframe>
     </div>
 
@@ -92,7 +94,8 @@ title: Money, Money, Movies
     </p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/interactive_top_20_genres_with_highest_revenue.html" width="100%" height="100%" style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/interactive_top_20_genres_with_highest_revenue.html"
+        width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
@@ -132,7 +135,8 @@ title: Money, Money, Movies
     </p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/interactive_top_20_genres_with_highest_revenue_2.html" width="100%" height="100%" style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/interactive_top_20_genres_with_highest_revenue_2.html"
+        width="100%" height="100%" style="border: none;">
       </iframe>
     </div>
 
@@ -150,7 +154,8 @@ title: Money, Money, Movies
       across genres. The boxplots below will offer a more detailed view. </p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/boxplots_revenue_distribution_top_20.html" width="100%" height="100%" style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/boxplots_revenue_distribution_top_20.html" width="100%"
+        height="100%" style="border: none;">
       </iframe>
     </div>
 
@@ -191,7 +196,8 @@ title: Money, Money, Movies
       periods when some genres were more profitable than others? Let's take a closer look.</p>
 
     <div class="plot-container-large">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/revenue_trends_over_time_heatmap.html" width="100%" height="100%" style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/revenue_trends_over_time_heatmap.html" width="100%"
+        height="100%" style="border: none;">
       </iframe>
     </div>
 
@@ -209,7 +215,8 @@ title: Money, Money, Movies
       was the most profitable genre for each decade? Let’s find out.</p>
 
     <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/shades/genre_ranking_over_time_racing_barplot.html" width="100%" height="100%" style="border: none;">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/genre_ranking_over_time_racing_barplot.html" width="100%"
+        height="100%" style="border: none;">
       </iframe>
     </div>
 
@@ -255,12 +262,38 @@ title: Money, Money, Movies
       correspond to the respective metrics: average revenue (on the left, in dollars) and movie count (on the right).
     </p>
 
-    <p>As we can observe, the period spanning the late 1970s and early 1980s appears to have been a period of particularly
+    <p>As we can observe, the period spanning the late 1970s and early 1980s appears to have been a period of
+      particularly
       high average box office revenue across most genres. This suggests a potential "golden age" for certain types
-      of films during that time. Furthermore, in more recent decades, we observe a distinct trend of increased production
-      volume across many genres. While production has increased, it's important to remember that this doesn't automatically
-      translate to consistently higher average revenues, as we've noted before (more isn't always more).
+      of films during that time. Furthermore, in more recent decades, we observe a distinct trend of increased
+      production
+      volume across many genres. While production has increased, it's important to remember that this doesn't
+      automatically
+      translate to consistently higher average revenues, as we've noted before (more isn't always more). To understand
+      this relationship better, we can explore the correlation between the number of movies produced and the average box
+      office revenue per genre. Let's have a look at the correlation plot below.
     </p>
+
+    <div class="plot-container-large">
+      <iframe src="{{ site.baseurl }}/assets/plots/shades/correlation_shades" width="100%" height="100%"
+        style="border: none;">
+      </iframe>
+    </div>
+
+    <p>This bar chart shows the correlation coefficients between the number of movies produced in each genre and their
+      average box office revenue over time. The Pearson correlation reflects the strength of a linear relationship,
+      while the Spearman correlation captures how well the relationship can be explained by ranked or monotonic trends.
+    </p>
+
+    <p>From the plot, genres like <i>Mystery</i>, <i>Science Fiction</i>, and <i>Action</i> show positive correlations,
+      indicating that
+      as more movies in these genres are made, their average box office revenue tends to increase. In contrast,
+      <i>Indie</i>
+      films have both Pearson and Spearman correlations negative, suggesting that a higher number of such films may
+      correspond to lower average revenue. </p>
+
+    <p><b>TODO: Please check this part and enrich it!!! It is not good currently. Explain a little bit more what it
+        means that some genres have one coefficient positive and one negative</b></p>
 
     <hr>
 
@@ -268,6 +301,8 @@ title: Money, Money, Movies
 
     <p> What did we discover from all this analysis? </p>
     <p> After checking out the plots and digging into the stats, here are the main things we’ve learned: </p>
+
+    <p><b>TODO: Please finish this part!!!!!</b></p>
 
   </div>
 </div>
