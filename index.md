@@ -18,8 +18,8 @@ title: Money, Money, Movies
    font-family: 'Garamond', serif; 
    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8); 
    color: white;
-   margin: -70px -20px 40px -20px;
-   width: 100vw;
+   margin: -70px 0px 40px 0px;
+   width: 97vw;
    position: relative;
    left: 50%;
    transform: translateX(-50%);">
