@@ -41,20 +41,19 @@ title: Money, Money, Movies
 <div class="content">
   <div class="text-custom">
 
-    <p>Ever wondered if a director's name guarantees box office success? In <em>Starlight</em>, we explore this connection, diving deep into how a director's influence shapes a movie's financial journey.</p>
+    <p>Have you ever wondered if a director's name guarantees box office success? In the movie Starlight, you explore how a director can influence a movie's financial journey.</p>
 
     <hr>
 
     <h3>Setting the Scene</h3>
 
-    <p>To understand the role of directors, we first need to explore the cinematic landscape. The dataset includes metrics like cumulative revenue, movie counts, and top-performing movies by directors. Each visualization reveals a unique aspect of the director’s impact.</p>
+    <p>To understand the role of directors, it’s important to first explore the cinematic landscape. What is the maximum box office revenue achieved each year? Let’s take a closer look!</p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/starlight/log_max_box_office_revenue_over_time.html" width="100%" height="100%" style="border: none;"></iframe>
     </div>
 
-    <p>This plot reveals the logarithmic growth of maximum box office revenues over time. It’s like a cinematic arms race where every blockbuster raises the stakes! Directors like Victor Fleming, with <em>Gone with the Wind</em> (1939), and William Cottrell, known for <em>Snow White and the Seven Dwarfs</em> (1937), set benchmarks that remain legendary.
-    Indeed after infla</p>
+    <p>TO DOOOO COMPLETE WITH THE MOVIES HERE: There are notable differences across the years. The highest box office revenues were achieved in 1937 and 1939 with Snow White and the Seven Dwarfs by William Cottrell and Gone with the Wind by Victor Fleming. Other blockbusters include XXX by YYY in 1942 and XXX by YYY in 1951. More recent successes were achieved by XXX by YYY in 1997 and XXX by YYY in 2009.</p>
 
     <center>
     <div class="image-section">
@@ -65,52 +64,57 @@ title: Money, Money, Movies
   </center>
     <hr>
 
-    <h3>The Influence Unfolds</h3>
+    <h3>Directors in the Spotlight: Exploring the Total Revenue and Number of Movies</h3>
 
-    <p>We begin with an analysis of total revenue by directors. Does greater revenue equal more movies, or is the influence more nuanced?</p>
+    <p>Who is on top of the leaderboard for total box office revenue in their lifetime? Is this success influenced by the number of movies they’ve directed? Producing more movies might boost the overall box office revenue but achieving success through a few blockbusters is also possible. Let’s first reveal the leading names in terms of total box office revenue.</p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/starlight/top_15_directors_total_revenue.html" width="100%" height="100%" style="border: none;"></iframe>
     </div>
 
-    <p>Steven Spielberg, the undisputed king of blockbusters, tops this chart. With classics like <em>Jurassic Park</em> and <em>E.T.</em>, his films have redefined what audiences expect from cinema. But can James Cameron and Peter Jackson, known for their iconic works, challenge Spielberg’s reign?</p>
+    <p>Steven Spielberg, the undisputed king of blockbusters, tops this chart. His classics like Jurassic Park and E.T. have attracted many audiences. James Cameron and Peter Jackson are also well-known names in the world of cinema. However, since they are all from an older generation, younger directors may catch up with them in the years to come.</p>
 
-    <p>Does the number of films directed play a role? Let’s find out!</p>
+    <p>Let’s see if the number of movies directed plays a role. Do the leading names in terms of overall box office revenue also direct the most movies? </p>
+
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/starlight/top_15_directors_movie_count.html" width="100%" height="100%" style="border: none;"></iframe>
     </div>
 
-    <p>Here, prolific directors like Woody Allen and Clint Eastwood emerge. They show that quantity doesn’t always compromise quality. Is being a workaholic a key to success, or is it about creating a niche?</p>
+    <p>Even though Steven Spielberg appears again on the top list, the number of movies alone does not seem to be a determining factor. The leaderboards for total box office revenue and the number of directed movies do not significantly overlap. In terms of quantity, Woody Allen leads with 36 directed movies, followed by Clint Eastwood with 28.</p>
+
+    <p> The number of movies does not seem to directly influence overall success. Perhaps it’s about creating a niche? Or did the most successful directors achieve their success sequentially? Let’s take a look at how their revenues evolved over time. </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/starlight/cumulative_revenue_director_top15_raceplot.html" width="100%" height="100%" style="border: none;"></iframe>
     </div>
 
-    <p>This raceplot adds drama, tracking the cumulative box office earnings of top directors over time. Notice the exhilarating neck-and-neck competition between Spielberg and Cameron in the 2000s.</p>
+    <p>A thrilling neck-and-neck competition between Spielberg and Cameron in the 2000s is noticed. TODOOOOO ANALYSE A BIT MORE, FIND SOME OTHER INTERESTING THINGS.</p>
 
-    <hr>
-
-    <h3>Star Performers</h3>
-
-    <p>Movies can define directors. The treemap of top 15 movies by revenue showcases standout films that dominated specific years.</p>
-
-    <div class="plot-container">
-      <iframe src="{{ site.baseurl }}/assets/plots/starlight/slow_top_15_movie_revenue_by_director.html" width="100%" height="100%" style="border: none;"></iframe>
-    </div>
-
-    <p>From <em>Avatar</em> to <em>Avengers: Endgame</em>, individual hits illustrate how one film can catapult a director into stardom. But how does this impact evolve over decades?</p>
+    <p> Even if not on the overall leaderboard, some directors might have been very successful in specific years. Let’s have a look at the leading names over the years. The larger the space taken per director, the more outstanding his success was compared to the others. </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/starlight/slow_top_15_movie_director_treemap_over_time.html" width="100%" height="100%" style="border: none;"></iframe>
     </div>
 
-    <p>Here, the treemap elegantly portrays how dominance shifts. Watch out for directors who consistently punch above their weight, creating masterpieces across decades.</p>
+    <p> Here, the treemap elegantly portrays how dominance shifts. Watch out for directors who consistently punch above their weight, creating masterpieces across decades. TO DOOOO MORE ANALYSIS HERE </p>
+
+    <hr>
+
+    <h3>Stars Directing Star Movies: Revealing the Blockbusters Behind the Directors</h3>
+
+    <p>As already noted, directing even a few blockbusters can significantly boost a director's lifetime box office revenue. Let’s have a look at the top movies by revenue per year and explore how they have impacted the cinematic world over time.</p>
+
+    <div class="plot-container">
+      <iframe src="{{ site.baseurl }}/assets/plots/starlight/slow_top_15_movie_revenue_by_director.html" width="100%" height="100%" style="border: none;"></iframe>
+    </div>
+
+    <p>TO DOOOOO ANALYIS From <em>Avatar</em> to <em>Avengers: Endgame</em>, individual hits illustrate how one film can catapult a director into stardom. But how does this impact evolve over decades?</p>
 
     <hr>
 
     <h3>The Final Scene</h3>
 
-    <p>Directors undeniably play a pivotal role in a film's financial success, as evidenced by their sustained influence over time. Yet, they are only one part of a larger cinematic equation. Factors like storytelling, cast, and marketing also share the spotlight.</p>
+    <p>TO DOOOOOOOO COMPLETE Directors undeniably play a pivotal role in a film's financial success, as evidenced by their sustained influence over time. Yet, they are only one part of a larger cinematic equation. Factors like storytelling, cast, and marketing also share the spotlight.</p>
 
     <p>As the credits roll, <em>Starlight</em> leaves us pondering: Is it the name on the director's chair or the synergy of countless elements that truly shapes box office triumphs?</p>
 
