@@ -44,7 +44,7 @@ title: Money, Money, Movies
       Movies light up our screens, but their success often depends on more than just the story. Is the idea of a summer
       blockbuster really supported by the data? And do longer movies tend to make more money during certain seasons? In
       the movie Waves you will get insights into the influence of a movie’s release time and season on its success and
-      how runtime and genre contribute to it.
+      how runtime and <i>genre</i> contribute to it.
     </p>
 
     <hr>
@@ -76,17 +76,15 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p> The chart shows how movie release seasons affect box office revenue. Summer has the highest and most consistent
-      earnings, making it the strongest season for releases. Spring and fall perform similarly, while winter shows the
-      lowest and most varied revenues. This suggests that summer is the best season to release a movie for higher box
-      office success. </p>
-
+    The data shows distinct seasonal trends. <i>Summer</i> has the highest average values, reflecting consistent performance, 
+    while <i>winter</i> exhibits the largest variance and the highest maximum, indicating significant variability. <i>Spring</i> and 
+    <i>autumn</i> act as transitional periods, with steadier patterns leading into the extremes of <i>summer</i> and <i>winter</i>.
     <hr>
 
     <h3>Genre Matters: Exploring the Season-Genre Connection</h3>
 
-    <p> Which genres were the most popular in different years? How has this popularity changed over time? To start the
-      analysis of genre influence, let’s explore their trends in popularity over the years. </p>
+    <p> Which <i>genres</i> were the most popular in different years? How has this popularity changed over time? To start the
+      analysis of <i>genre</i> influence, let’s explore their trends in popularity over the years. </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/waves/genre_popularity_over_time.html" width="100%" height="100%"
@@ -94,12 +92,15 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p> Drama and comedy maintain their dominance over decades. Genres like Thriller and Romance Film gain prominence
-      later, particularly in the latter half of the 20th century. Over time, the overall number of movies produced has
-      increased. Interestingly, there is a noticeable spike in the number of movies produced around 1950 compared to the
-      other years during that era. </p>
+    <p><i>Drama</i> and <i>comedy</i> maintain their dominance over decades, while <i>genres</i> like <i>Thriller</i> and <i>Romance Film</i> gain prominence 
+      in the latter half of the 20th century. Over time, the overall number of movies produced has increased, but an interesting 
+      spike can be observed around <b>1950</b>. This era was a turning point for the film industry as theaters faced growing competition 
+      from the rise of television, which began pulling audiences away from cinemas. To counter this, studios ramped up production 
+      and experimented with innovations like Technicolor, widescreen formats, and immersive sound to lure audiences back to theaters. 
+      This revival strategy, coupled with the booming post-war economy and the public’s craving for entertainment, 
+      led to an unprecedented surge in movie production, making <b>1950s</b> a standout period.</p>
 
-    <p> What are the most common genres during each season of the year? Let’s explore the top genres for each season so
+    <p> What are the most common <i>genres</i> during each season of the year? Let’s explore the top <i>genres</i> for each season so
       those with the highest number of movie releases during a particular time of year. </p>
 
     <div class="plot-container">
@@ -108,13 +109,13 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p> Looking at the top 5 genres by movie count, drama leads in all seasons. However, during summer, it’s time to
-      shine for comedy, which is almost overtaking drama in popularity. The Action genre also has comparatively high
-      popularity in summer. Romance takes a spot on the podium during winter, a time when people enjoy the coziness of
-      staying indoors. Thrillers tend to be more popular during summer and fall compared to other seasons. </p>
+    <p> Looking at the top <b>5</b> <i>genres</i> by movie count, <i>drama</i> leads in all seasons. However, during <i>summer</i>, it’s time to
+      shine for <i>comedy</i>, which is almost overtaking <i>drama</i> in popularity. The <i>Action</i> <i>genre</i> also has comparatively high
+      popularity in <i>summer</i>. <i>Romance</i> takes a spot on the podium during <i>winter</i>, a time when people enjoy the coziness of
+      staying indoors. <i>Thrillers</i> tend to be more popular during <i>summer</i> and <i>fall</i> compared to other seasons. </p>
 
     <p> After looking at the seasonal leaderboards based on the number of movie releases, let’s now explore the relation
-      between seasons and box office revenue across different genres. </p>
+      between seasons and box office revenue across different <i>genres</i>. </p>
 
     <div class="plot-container">
       <iframe src="{{ site.baseurl }}/assets/plots/waves/genre_season_heatmap.html" width="100%" height="100%"
@@ -122,12 +123,12 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p> Summer shows consistently high revenues across most genres. However, the highest averages are seen during
-      spring, with Fantasy, Adventure and Family Film with values around $200M, $190M and $170M, respectively. These
-      three genres perform well across all seasons but achieve their best results in spring and summer. Thriller, on the
-      other hand, shows noticeable differences depending on the season, with its peak in summer and a drop of around
-      $60M in fall. A similar trend is seen with Crime Fiction, which has its peaks in summer and its lowest phase in
-      winter. This analysis highlights interesting differences in box office revenues when looking at how genre and
+    <p> <i>Summer</i> shows consistently high revenues across most <i>genres</i>. However, the highest averages are seen during
+      <i>spring</i>, with <i>Fantasy</i>, <i>Adventure</i> and <i>Family Film</i> with values around <b>$200M</b>, <b>$190M</b> and <b>$170M</b>, respectively. These
+      three <i>genres</i> perform well across all seasons but achieve their best results in <i>spring</i> and <i>summer</i>. <i>Thriller</i>, on the
+      other hand, shows noticeable differences depending on the season, with its peak in <i>summer</i> and a drop of around
+      <b>$60M</b> in <i>fall</i>. A similar trend is seen with <i>Crime Fiction</i>, which has its peaks in <i>summer</i> and its lowest phase in
+      <i>winter</i>. This analysis highlights interesting differences in box office revenues when looking at how <i>genre</i> and
       season interact. </p>
 
     <hr>
@@ -142,15 +143,20 @@ title: Money, Money, Movies
         style="border: none;">
       </iframe>
     </div>
-
-    <p> TO DOOOOOOOOO </p>
+    <p>What’s the perfect runtime for box office success? The data suggests it’s right around <b>120 minutes</b>—long enough 
+      to tell a compelling story but short enough to keep audiences hooked without glancing at their watches. 
+      Movies in this range consistently dominate the revenue charts, mea
+      But what about the outliers? Short films under <b>80 minutes</b> and extra-long epics over <b>150 minutes</b> tend to generate 
+      lower revenues on average. Shorter films might leave audiences feeling short-changed, while excessively long ones 
+      risk losing their attention. Of course, there are always exceptions—movies with strong hype or cultural significance 
+      can break the mold and deliver big earnings, regardless of runtime.
 
     <hr>
 
     <h3>Release Day: Exploring the Impact of Weekly Timing</h3>
 
     <p> Season isn’t the only timing factor. The release day of the week can influence the box office revenue too. Do
-      movies released on Fridays or weekends tend to make more money on average? Let’s have a closer look at the daily
+      <i>movies</i> released on Fridays or weekends tend to make more money on average? Let’s have a closer look at the daily
       box office averages. </p>
 
     <div class="plot-container">
@@ -159,8 +165,12 @@ title: Money, Money, Movies
       </iframe>
     </div>
 
-    <p> Movies released on Wednesdays surprisingly generate the highest average revenues. Monday, Thursday and Tuesday
-      follow. The weekend days, including Friday, show noticeably lower average box office revenues. </p>
+    <p> Movies released on Wednesdays surprisingly generate the highest average revenues, a phenomenon that might be explained 
+      by strategic timing around holidays or mid-week events. For instance, in the U.S., blockbusters are sometimes released 
+      on Wednesdays ahead of major holidays like Thanksgiving or the Fourth of July, allowing studios to maximize revenue over 
+      an extended weekend period. This pattern suggests a hypothetical theory: Wednesday releases benefit from being positioned 
+      at the crossroads of mid-week momentum and extended leisure periods. Monday, Thursday, and Tuesday follow in revenue averages, 
+      while weekend days, including Friday, show noticeably lower average box office revenues. </p>
 
     <hr>
 
@@ -168,8 +178,15 @@ title: Money, Money, Movies
 
     <p> So, after all the analysis, what can be concluded? </p>
 
-    <p> After looking at all the plots and considering the statistical analysis, some takeaways can be drawn: TO
-      DOOOOOOOOO </p>
+    
+Movies don’t just shine on the big screen—they sparkle in the right season. <i>Summer</i> reigns as blockbuster season, with <i>action</i> and 
+<i>comedy</i> raking in the big bucks. <i>Winter</i> is a wildcard, delivering the highest highs but also the wildest swings, indeed <i>romance </i> movies
+are the most popular during this season due to Valentines Day and Christmas holidays. 
+Runtime is another star— <b>90-120 minutes</b> hits the sweet spot, long enough to grip but short enough to keep audiences glued. 
+Even the release day is important! Wednesday releases top the revenue charts, outshining traditional weekend openings, thanks to clever holiday timing.
+
+In the end, it’s all about strategy. A movie’s success is a mix of timing, runtime, and a little seasonal magic—proof that box office gold 
+is as much about planning as it is about storytelling.
 
   </div>
 </div>
